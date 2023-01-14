@@ -1,0 +1,5 @@
+@use "../../styles/colors" as color;
+
+.home_container {
+  color: color.$purple-50;
+}

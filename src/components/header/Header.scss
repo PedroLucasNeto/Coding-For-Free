@@ -1,0 +1,42 @@
+@use "../../styles/colors" as color;
+
+.header_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 1.5rem 2rem;
+  background-color: rgba(color.$purple-500, 0.1);
+
+  > h1 {
+    color: color.$purple-50;
+    font-size: 1.5rem;
+  }
+}
+
+.header_nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+
+  > li {
+    color: color.$purple-50;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+
+    &::after {
+      content: " ";
+      display: block;
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      border-bottom: 2px solid color.$purple-400;
+
+      transform: scaleX(0);
+    }
+
+    &:hover::after {
+      color: color.$purple-400;
+      transform: scaleX(0.8);
+    }
+  }
+}
