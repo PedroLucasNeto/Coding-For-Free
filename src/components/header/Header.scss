@@ -1,4 +1,5 @@
 @use "../../styles/colors" as color;
+@use "../../styles/breakpoints" as *;
 
 .header_container {
   display: flex;
@@ -15,7 +16,7 @@
 }
 
 .header_nav {
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
   gap: 1.5rem;
@@ -24,6 +25,10 @@
     color: color.$purple-50;
     cursor: pointer;
     transition: all 0.2s ease-in-out;
+
+    &:hover {
+      color: color.$purple-400;
+    }
 
     &::after {
       content: " ";
@@ -36,7 +41,11 @@
 
     &:hover::after {
       color: color.$purple-400;
-      transform: scaleX(0.8);
+      transform: scaleX(0.6);
     }
+  }
+
+  @include sm {
+    display: flex;
   }
 }
