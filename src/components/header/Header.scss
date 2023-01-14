@@ -25,6 +25,10 @@
     cursor: pointer;
     transition: all 0.2s ease-in-out;
 
+    &:hover {
+      color: color.$purple-400;
+    }
+
     &::after {
       content: " ";
       display: block;
@@ -36,7 +40,7 @@
 
     &:hover::after {
       color: color.$purple-400;
-      transform: scaleX(0.8);
+      transform: scaleX(0.6);
     }
   }
 }
