@@ -14,17 +14,16 @@ const Home = () => {
         <img src={project_image} alt="Desenvolvedor" />
         <div className="about_project">
           <div className="about_section">
-            <h2>Who are we?</h2>
+            <h2>What is Coding For Free?</h2>
             <p>
-              We are Information Systems students at Unifacisa, Campina Grande,
-              Paraiba, Brazil.
+              CFF is an open-source project created to help people and companies build their own websites totally  <mark>for free</mark>.
             </p>
           </div>
           <div className="about_section">
-            <h2>What is Coding For Free?</h2>
+            <h2>Our Goal</h2>
             <p>
-              CFF is an open-source project to help people who are beginning a
-              new company
+              Is to bring you or your company great results in the least amount of time possible.
+              This is a way we found to acquire experience while we have not yet been exposed to the market.
             </p>
           </div>
         </div>
