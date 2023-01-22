@@ -1,0 +1,90 @@
+@use "../../styles/colors" as color;
+@use "../../styles/breakpoints" as *;
+
+.info_card {
+  display: flex;
+  flex-direction: column;
+
+
+  margin: auto;
+
+  background-color: rgba(color.$purple-900, 0.1);
+
+  width: 17rem;
+  height: 17rem;
+
+  border-radius: 3rem;
+  padding: 2rem;
+  overflow: hidden;
+
+  img {
+    border-radius: 50%;
+
+    object-fit: cover;
+
+    width: 60px;
+    height: 60px;
+  }
+}
+
+.profile_info{
+  display: flex;
+  flex-direction: row;
+
+  gap: 1.5rem;
+
+  width: 100%;
+
+  margin-bottom: 2rem;
+
+  div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin: auto 0;
+
+    h2 {
+      color: color.$purple-50;
+      font-weight: 700;
+      font-size: 1.25rem;
+    }
+
+    h3 {
+      color: color.$purple-50;
+      font-weight: 200;
+      font-size: 1rem;
+    }
+  }
+}
+
+.info_list {
+  display: flex;
+  flex-direction: column;
+
+  margin: 0 auto;
+
+  h3 {
+    color: color.$purple-50;
+    font-weight: 100;
+    font-size: 0.75rem;
+  }
+  button {
+    display: flex;
+    align-items: center;
+
+    margin-bottom: 1rem;
+
+    gap: 30px;
+  }
+}
+
+.icons{
+  width: 1.75rem;
+  height: 1.75rem;
+
+  color: color.$purple-50;
+
+}
+
+
