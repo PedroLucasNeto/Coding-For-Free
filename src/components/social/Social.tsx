@@ -22,7 +22,6 @@ const Social = () => {
               <a href={url}>{icon}</a>
               <span></span>
             </button>
-
             <small>{title}</small>
           </div>
         ))}
