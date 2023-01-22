@@ -19,3 +19,35 @@ body {
   font-family: sans-serif;
   overflow-x: hidden;
 }
+
+mark {
+  color: color.$purple-50;
+  background: linear-gradient(
+    -180deg,
+    transparent,
+    rgba(color.$purple-500, 0.3)
+  );
+
+  border-radius: 0.1em;
+  padding: 0rem 0.25rem;
+}
+
+button {
+  border: none;
+  margin: 0;
+  padding: 0;
+  width: auto;
+  overflow: visible;
+
+  background: transparent;
+
+  color: inherit;
+  font: inherit;
+
+  line-height: normal;
+
+  -webkit-font-smoothing: inherit;
+  -moz-osx-font-smoothing: inherit;
+
+  cursor: pointer;
+}

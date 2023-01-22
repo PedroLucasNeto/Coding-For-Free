@@ -133,6 +133,7 @@
   @include sm {
     flex-direction: row;
     gap: 1.25rem;
+    padding: 4rem 3rem;
     max-width: 100%;
 
     > img {
@@ -149,7 +150,7 @@
 
   @include md {
     gap: 2rem;
-    padding: 4rem 3rem;
+    padding: 6rem 3rem;
     margin: 0 auto;
     max-width: 72rem;
 
