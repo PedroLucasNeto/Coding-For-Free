@@ -19,4 +19,24 @@ export const contributors = [
       email: "mailto:harloongarcia@gmail.com",
     },
   },
+  {
+    name: "Harlon Garcia",
+    role: "Co-founder",
+    picture: "src/assets/images/contributors_pictures/harlon_garcia.jpeg",
+    contactLinks: {
+      linkedin: "https://www.linkedin.com/in/harlongarcia/",
+      github: "https://github.com/HarlonGarcia",
+      email: "mailto:harloongarcia@gmail.com",
+    },
+  },
+  {
+    name: "Harlon Garcia",
+    role: "Co-founder",
+    picture: "src/assets/images/contributors_pictures/harlon_garcia.jpeg",
+    contactLinks: {
+      linkedin: "https://www.linkedin.com/in/harlongarcia/",
+      github: "https://github.com/HarlonGarcia",
+      email: "mailto:harloongarcia@gmail.com",
+    },
+  },
 ];

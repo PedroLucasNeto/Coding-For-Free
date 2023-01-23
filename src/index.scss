@@ -1,5 +1,9 @@
 @use "./styles/colors" as color;
 
+:root {
+  --swiper-theme-color: #ab72ff;
+}
+
 * {
   margin: 0;
   padding: 0;
