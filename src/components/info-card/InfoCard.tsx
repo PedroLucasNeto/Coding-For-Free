@@ -1,38 +1,55 @@
 import "./InfoCard.scss";
 
-import { SiDiscord, SiGithub } from "react-icons/si";
-import { RiWhatsappFill, RiLinkedinFill } from "react-icons/ri";
+import { SiGithub } from "react-icons/si";
+import { MdEmail } from "react-icons/md";
+import { RiLinkedinFill } from "react-icons/ri";
+import { Contributor } from "../../types/Contributor";
 
-// const style = {color: "color.$purple-50"}
-const InfoCard = () => {
+interface InfoCardProps {
+  contributor: Contributor;
+}
+
+const InfoCard = ({ contributor }: InfoCardProps) => {
+  if (!contributor) {
+    return null;
+  }
+
+  const { name, role, picture, contactLinks } = contributor;
+
   return (
     <div className="info_card">
       <div className="profile_info">
-        <img src="src/assets/images/profile.jpg" alt="" />
+        <img src={picture} alt={`${name}'s picture`} />
         <div>
-          <h2>Pedro Lucas</h2>
-          <h3>Founder</h3>
+          <h2>{name}</h2>
+          {role ? <h3>{role}</h3> : null}
         </div>
       </div>
       <div className="info_list">
-        <button>
-          <a href="https://discord.gg/bSsSKy6Vtv">
-            <SiDiscord className="icons" />
-          </a>
-          <h3>Discord Community.</h3>
-        </button>
-        <button>
-          <a href="https://www.linkedin.com/in/pedrolucasneto/">
-            <RiLinkedinFill className="icons" />
-          </a>
-          <h3>LinkedIn Profile.</h3>
-        </button>
-        <button>
-          <a href="https://github.com/PedroLucasNeto">
-            <SiGithub className="icons" />
-          </a>
-          <h3>Github Profile.</h3>
-        </button>
+        {contactLinks.linkedin ? (
+          <button>
+            <a href={contactLinks.linkedin}>
+              <RiLinkedinFill className="icons" />
+            </a>
+            <h3>LinkedIn Profile</h3>
+          </button>
+        ) : null}
+        {contactLinks.github ? (
+          <button>
+            <a href={contactLinks.github}>
+              <SiGithub className="icons" />
+            </a>
+            <h3>Github Profile</h3>
+          </button>
+        ) : null}
+        {contactLinks.email ? (
+          <button>
+            <a href={contactLinks.email}>
+              <MdEmail className="icons" />
+            </a>
+            <h3>Email</h3>
+          </button>
+        ) : null}
       </div>
     </div>
   );

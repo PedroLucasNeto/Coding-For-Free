@@ -2,7 +2,7 @@ import "./Home.scss";
 import { TbArrowBigDown } from "react-icons/tb";
 import project_image from "../../assets/images/project.jpg";
 import Social from "../../components/social/Social";
-import InfoCard from "../../components/info-card/InfoCard";
+import Contributors from "../../components/contributors/Contributors";
 
 const Home = () => {
   return (
@@ -22,15 +22,15 @@ const Home = () => {
               build their own websites totally <mark>for free</mark>.
             </p>
             <p>
-              Our goal is to bring you or your company great results in the least amount
-              of time possible. This is a way we found to acquire experience
-              while we have not yet been exposed to the market.
+              Our goal is to bring you or your company great results in the
+              least amount of time possible. This is a way we found to acquire
+              experience while we have not yet been exposed to the market.
             </p>
           </div>
         </div>
       </section>
       <Social />
-      <InfoCard />
+      <Contributors />
     </div>
   );
 };

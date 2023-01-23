@@ -5,36 +5,32 @@
   display: flex;
   flex-direction: column;
 
+  min-width: 17rem;
+  width: fit-content;
 
-  margin: auto;
+  margin: 0 auto;
+  padding: 2rem;
 
   background-color: rgba(color.$purple-900, 0.1);
-
-  width: 17rem;
-  height: 17rem;
-
-  border-radius: 3rem;
-  padding: 2rem;
+  border-radius: 2rem;
   overflow: hidden;
 
   img {
+    width: 3.75rem;
+    height: 3.75rem;
+
     border-radius: 50%;
-
     object-fit: cover;
-
-    width: 60px;
-    height: 60px;
   }
 }
 
-.profile_info{
+.profile_info {
   display: flex;
+  justify-content: space-between;
   flex-direction: row;
-
   gap: 1.5rem;
 
-  width: 100%;
-
+  margin: 0 auto;
   margin-bottom: 2rem;
 
   div {
@@ -48,10 +44,15 @@
       color: color.$purple-50;
       font-weight: 700;
       font-size: 1.25rem;
+
+      white-space: nowrap;
+      width: 100%;
+      overflow: hidden;
+      text-overflow: ellipsis;
     }
 
     h3 {
-      color: color.$purple-50;
+      color: color.$purple-300;
       font-weight: 200;
       font-size: 1rem;
     }
@@ -67,24 +68,21 @@
   h3 {
     color: color.$purple-50;
     font-weight: 100;
-    font-size: 0.75rem;
+    font-size: 1rem;
   }
+
   button {
     display: flex;
     align-items: center;
+    gap: 1.5rem;
 
     margin-bottom: 1rem;
-
-    gap: 30px;
   }
 }
 
-.icons{
+.icons {
   width: 1.75rem;
   height: 1.75rem;
 
-  color: color.$purple-50;
-
+  color: color.$purple-400;
 }
-
-
