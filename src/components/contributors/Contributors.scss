@@ -1,6 +1,17 @@
+@use "../../styles/colors" as color;
+@use "../../styles/breakpoints" as *;
+
 .contributors {
   display: flex;
   gap: 1rem;
 
   padding: 2rem;
+}
+.swiper{
+  width: 100%;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: color.$purple-300 !important;
 }
