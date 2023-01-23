@@ -12,9 +12,9 @@ const social_links = [
 const Social = () => {
   return (
     <section className="social">
-      <h1>
+      <h2>
         Follow us on <mark>social media</mark>
-      </h1>
+      </h2>
       <div className="social_icons">
         {social_links.map(({ icon, title, url }, index) => (
           <div key={index + title} className="social_buttons">

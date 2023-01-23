@@ -14,6 +14,7 @@
   align-items: center;
 
   padding: 2rem 1.5rem;
+  margin-bottom: 1rem;
   text-align: center;
 
   > h1 {
@@ -92,7 +93,7 @@
   max-width: 24rem;
 
   margin: 0 auto;
-  padding: 3rem;
+  padding: 2rem;
 
   > img {
     object-fit: cover;
@@ -146,7 +147,6 @@
     .about_project {
       text-align: left;
       margin: auto 0;
-
     }
   }
 
