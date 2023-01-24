@@ -5,38 +5,37 @@
   display: flex;
   flex-direction: column;
 
-  min-width: 17rem;
-  width: fit-content;
+  width: 18rem;
 
   margin: 0 auto;
   padding: 2rem;
 
-  background-color: rgba(color.$purple-900, 0.1);
+  background-color: color.$black-700;
   border-radius: 2rem;
   overflow: hidden;
+}
 
-  img {
+.profile_info {
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+
+  width: 100%;
+
+  margin: 0 auto;
+  margin-bottom: 2rem;
+
+  > img {
     width: 3.75rem;
     height: 3.75rem;
 
     border-radius: 50%;
     object-fit: cover;
   }
-}
-
-.profile_info {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row;
-  gap: 1.5rem;
-
-  margin: 0 auto;
-  margin-bottom: 2rem;
 
   div {
     display: flex;
     flex-direction: column;
-    align-items: center;
 
     margin: auto 0;
 
@@ -45,8 +44,8 @@
       font-weight: 700;
       font-size: 1.25rem;
 
+      max-width: 9rem;
       white-space: nowrap;
-      width: 100%;
       overflow: hidden;
       text-overflow: ellipsis;
     }

@@ -31,6 +31,14 @@ const Home = () => {
       </section>
       <Social />
       <Contributors />
+      <div>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda
+          rerum itaque ducimus voluptatibus qui nobis. Porro vero odio
+          exercitationem, quibusdam veritatis aliquid, adipisci maxime
+          necessitatibus mollitia nulla, dolores omnis voluptatem.
+        </p>
+      </div>
     </div>
   );
 };

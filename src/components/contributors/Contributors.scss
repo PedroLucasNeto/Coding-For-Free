@@ -2,16 +2,42 @@
 @use "../../styles/breakpoints" as *;
 
 .contributors {
-  display: flex;
-  gap: 1rem;
-
   padding: 2rem;
-}
-.swiper{
-  width: 100%;
+  overflow: hidden;
+  max-width: 100%;
 }
 
-.swiper-button-next,
-.swiper-button-prev {
-  color: color.$purple-300 !important;
+.swiper {
+  display: flex;
+  // max-width: 38rem;
+  overflow: visible;
+
+  cursor: pointer;
+}
+
+.swiper-slide {
+  width: fit-content;
+}
+
+.swiper-wrapper {
+}
+
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+  bottom: -25px;
+}
+
+.swiper-pagination-bullet {
+  background: color.$purple-700;
+}
+
+.swiper-pagination-bullet-active {
+  background: color.$purple-400;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  font-size: 1.5rem;
 }
