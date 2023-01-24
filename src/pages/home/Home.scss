@@ -97,7 +97,7 @@
 
   > img {
     object-fit: cover;
-    width: 100%;
+    max-height: 14rem;
 
     margin-bottom: 2rem;
     border-radius: 0.5rem;
@@ -125,9 +125,10 @@
       }
 
       p {
+
         line-height: 120%;
         color: color.$purple-50;
-        margin-bottom: 1rem;
+        margin-bottom: 2rem;
       }
     }
   }
@@ -139,14 +140,13 @@
     max-width: 100%;
 
     > img {
-      width: 30%;
-      max-width: 18rem;
+      width: 50%;
+      max-height: 100%;
       margin-bottom: 0;
     }
 
     .about_project {
       text-align: left;
-      margin: auto 0;
     }
   }
 
@@ -155,6 +155,13 @@
     padding: 6rem 3rem;
     margin: 0 auto;
     max-width: 72rem;
+
+
+    > img {
+      width: 40%;
+      height: 24rem;
+      margin-bottom: 0;
+    }
 
     .about_project {
       .about_section {
@@ -168,4 +175,31 @@
       }
     }
   }
+  // @include lg {
+
+  //   > img {
+  //     width: 40%;
+  //     height: 20rem;
+  //     margin-bottom: 0;
+  //   }
+  // }
+  @include xl {
+
+    > img {
+      width: 30%;
+      margin-bottom: 0;
+    }
+  }
+  @include x2l {
+
+    > img {
+      width: 40%;
+
+      margin-bottom: 0;
+    }
+
+  }
+
+
+
 }

@@ -1,5 +1,6 @@
 import "./Home.scss";
 import { TbArrowBigDown } from "react-icons/tb";
+import coding_image from "../../assets/images/coding.jpg";
 import project_image from "../../assets/images/project.jpg";
 import Social from "../../components/social/Social";
 import Contributors from "../../components/contributors/Contributors";
@@ -13,18 +14,25 @@ const Home = () => {
         <TbArrowBigDown className="see_more" />
       </section>
       <section className="home_project">
-        <img src={project_image} alt="Desenvolvedor" />
+        <img src={coding_image} alt="Desenvolvedor" />
         <div className="about_project">
           <div className="about_section">
-            <h2>What is Coding For Free?</h2>
+            <h2>About Project</h2>
             <p>
-              CFF is an open-source project created to help people and companies
-              build their own websites totally <mark>for free</mark>.
+              <mark>Coding For Free</mark>
+              is a way we found to acquire experience while we have not yet been
+              exposed to the market.
             </p>
+            <h2>Task</h2>
             <p>
-              Our goal is to bring you or your company great results in the
-              least amount of time possible. This is a way we found to acquire
-              experience while we have not yet been exposed to the market.
+              Our goal is to help you or your company to establish a strong
+              online presence by creating simple but powerfull landing pages.
+            </p>
+            <h2>Get your own website!</h2>
+            <p>
+              If you're starting a new business or have an idea that needs to be
+              shown to the worldyou can get your landing page
+              <mark>for free</mark>
             </p>
           </div>
         </div>
