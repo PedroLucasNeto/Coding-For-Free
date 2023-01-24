@@ -1,6 +1,8 @@
 import "./App.scss";
 import Header from "./components/header/Header";
 import Home from "./pages/home/Home";
+import AboutUs from "./pages/about-us/aboutUs";
+import Contact from "./pages/contact/Contact";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
@@ -9,6 +11,8 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/aboutUs" element={<AboutUs />} />
       </Routes>
     </BrowserRouter>
   );

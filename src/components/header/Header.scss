@@ -20,6 +20,9 @@
   justify-content: center;
   align-items: center;
   gap: 1.5rem;
+  a {
+    color: color.$purple-50
+  }
 
   > li {
     color: color.$purple-50;
