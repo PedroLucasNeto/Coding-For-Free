@@ -27,28 +27,28 @@ const InfoCard = ({ contributor }: InfoCardProps) => {
       </div>
       <div className="info_list">
         {contactLinks.linkedin ? (
-          <button>
-            <a href={contactLinks.linkedin}>
+          <a href={contactLinks.linkedin}>
+            <button>
               <RiLinkedinFill className="icons" />
-            </a>
-            <h3>LinkedIn Profile</h3>
-          </button>
+              <h3>LinkedIn Profile</h3>
+            </button>
+          </a>
         ) : null}
         {contactLinks.github ? (
-          <button>
-            <a href={contactLinks.github}>
+          <a href={contactLinks.github}>
+            <button>
               <SiGithub className="icons" />
-            </a>
-            <h3>Github Profile</h3>
-          </button>
+              <h3>Github Profile</h3>
+            </button>
+          </a>
         ) : null}
         {contactLinks.email ? (
-          <button>
-            <a href={contactLinks.email}>
+          <a href={contactLinks.email}>
+            <button>
               <MdEmail className="icons" />
-            </a>
-            <h3>Email</h3>
-          </button>
+              <h3>Email</h3>
+            </button>
+          </a>
         ) : null}
       </div>
     </div>
