@@ -3,10 +3,13 @@ import { SiDiscord, SiGithub } from "react-icons/si";
 import { RiWhatsappFill, RiLinkedinFill } from "react-icons/ri";
 
 const social_links = [
-  { icon: <SiDiscord />, title: "Discord", url: "" },
-  { icon: <SiGithub />, title: "Github", url: "" },
+  {
+    icon: <SiDiscord />,
+    title: "Discord",
+    url: "https://discord.gg/7vCgtjdanC",
+  },
+  { icon: <SiGithub />, title: "Github", url: "github.com" },
   { icon: <RiLinkedinFill />, title: "Linkedin", url: "" },
-  { icon: <RiWhatsappFill />, title: "Whatsapp", url: "" },
 ];
 
 const Social = () => {

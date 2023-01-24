@@ -29,8 +29,8 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <Social />
       <Contributors />
+      <Social />
       <div>
         <p>
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda
