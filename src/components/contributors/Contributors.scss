@@ -3,9 +3,41 @@
 
 .contributors {
   padding: 2rem;
+  overflow: hidden;
+  max-width: 100%;
 }
 
 .swiper {
   display: flex;
-  max-width: 100%;
+  // max-width: 38rem;
+  overflow: visible;
+
+  cursor: pointer;
+}
+
+.swiper-slide {
+  width: fit-content;
+}
+
+.swiper-wrapper {
+}
+
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+  bottom: -25px;
+}
+
+.swiper-pagination-bullet {
+  background: color.$purple-700;
+}
+
+.swiper-pagination-bullet-active {
+  background: color.$purple-400;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  font-size: 1.5rem;
 }

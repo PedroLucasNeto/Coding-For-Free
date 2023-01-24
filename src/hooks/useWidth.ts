@@ -11,7 +11,5 @@ export const useWidth = () => {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-  console.log(width);
-
   return width;
 };
