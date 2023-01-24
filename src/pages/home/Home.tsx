@@ -1,7 +1,6 @@
 import "./Home.scss";
 import { TbArrowBigDown } from "react-icons/tb";
 import coding_image from "../../assets/images/coding.jpg";
-import project_image from "../../assets/images/project.jpg";
 import Social from "../../components/social/Social";
 import Contributors from "../../components/contributors/Contributors";
 

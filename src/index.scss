@@ -1,21 +1,19 @@
 @use "./styles/colors" as color;
 
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 6px;
+}
 
+*::-webkit-scrollbar-track {
+  background: #242424;
+}
 
-  /* Chrome, Edge, and Safari */
-  *::-webkit-scrollbar {
-    width: 6px;
-  }
-
-  *::-webkit-scrollbar-track {
-    background: #242424;
-  }
-
-  *::-webkit-scrollbar-thumb {
-    background-color: rgba(color.$purple-900, 0.3);
-    border-radius: 1px;
-    border: 0px solid #212121;
-  }
+*::-webkit-scrollbar-thumb {
+  background-color: rgba(color.$purple-900, 0.3);
+  border-radius: 1px;
+  border: 0px solid #212121;
+}
 
 :root {
   --swiper-theme-color: #ab72ff;
@@ -72,4 +70,3 @@ button {
 
   cursor: pointer;
 }
-

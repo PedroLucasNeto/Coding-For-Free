@@ -15,12 +15,6 @@
   overflow: hidden;
 }
 
-.info_card:hover {
-  background-color: color.$black-800;
-  box-shadow: 2px 2px 15px 2px rgba(color.$purple-900, 0.4);
-  transform: scale( 1.01);
-}
-
 .profile_info {
   display: flex;
   flex-direction: row;
@@ -68,30 +62,40 @@
   display: flex;
   flex-direction: column;
 
+  width: 100%;
+
   margin: 0 auto;
 
-  h3 {
-    color: color.$purple-50;
-    font-weight: 100;
-    font-size: 1rem;
-  }
-
-  h3:hover {
-    color: color.$purple-200;
-  }
-
-  button {
+  > a > button {
     display: flex;
     align-items: center;
-    gap: 1.5rem;
+    gap: 1rem;
 
+    width: 100%;
+
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
     margin-bottom: 1rem;
+
+    .icons {
+      width: 1.75rem;
+      height: 1.75rem;
+
+      color: color.$purple-400;
+    }
+
+    h3 {
+      color: color.$purple-50;
+      font-weight: 100;
+      font-size: 1rem;
+    }
+
+    &:hover {
+      background-color: rgba(color.$black-900, 0.075);
+
+      h3 {
+        color: color.$purple-200;
+      }
+    }
   }
-}
-
-.icons {
-  width: 1.75rem;
-  height: 1.75rem;
-
-  color: color.$purple-400;
 }
