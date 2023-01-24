@@ -28,7 +28,7 @@
       > button {
         height: 100%;
         width: 100%;
-        background-color: color.$purple-500;
+        background-color: color.$purple-400;
         clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
 
         transition: all 0.4s ease-in-out;
@@ -41,7 +41,9 @@
           width: 80%;
           height: 100%;
 
-          opacity: 0.4;
+          background-color: color.$purple-400;
+
+          opacity: 0.8;
           transition: all 0.4s ease-in-out;
         }
 

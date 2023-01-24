@@ -3,7 +3,7 @@ import { contributors } from "../../utils/contributors";
 import { useWidth } from "../../hooks/useWidth";
 
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, EffectFade, Pagination } from "swiper";
+import { Navigation, EffectFade, Pagination, FreeMode } from "swiper";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/effect-fade";
@@ -20,8 +20,9 @@ const Contributors = () => {
         modules={[Navigation, EffectFade, Pagination]}
         effect="slide"
         speed={800}
-        slidesPerView={currentWidth > 576 ? 2 : 1}
-        spaceBetween={10}
+        freeMode={true}
+        slidesPerView={"auto"}
+        spaceBetween={40}
         pagination={{ clickable: true }}
         scrollbar={{ draggable: true }}
         className="swiper"

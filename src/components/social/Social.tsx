@@ -8,7 +8,11 @@ const social_links = [
     title: "Discord",
     url: "https://discord.gg/7vCgtjdanC",
   },
-  { icon: <SiGithub />, title: "Github", url: "github.com" },
+  {
+    icon: <SiGithub />,
+    title: "Github",
+    url: "https://github.com/PedroLucasNeto/Coding-For-Free",
+  },
   { icon: <RiLinkedinFill />, title: "Linkedin", url: "" },
 ];
 
@@ -22,7 +26,9 @@ const Social = () => {
         {social_links.map(({ icon, title, url }, index) => (
           <div key={index + title} className="social_buttons">
             <button style={{ left: "-" + index * 12 + "px" }}>
-              <a href={url}>{icon}</a>
+              <a href={url} target="_blank">
+                {icon}
+              </a>
               <span></span>
             </button>
             <small>{title}</small>

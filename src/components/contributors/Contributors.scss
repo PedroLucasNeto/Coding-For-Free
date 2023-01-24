@@ -4,15 +4,37 @@
 .contributors {
   padding: 2rem;
   overflow: hidden;
-  max-width: 100%;
+  margin: 0 auto;
+
+  max-width: 22rem;
+
+  @include sm {
+    max-width: 42rem;
+  }
+
+  @include xl {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:  100%;
+  }
+
 }
 
 .swiper {
-  display: flex;
-  // max-width: 38rem;
   overflow: visible;
-
   cursor: pointer;
+  max-width: 38rem;
+
+  @include sm {
+    max-width: 800%;
+  }
+
+  @include xl {
+    max-width: 1400px;
+  }
+
+
 }
 
 .swiper-slide {
@@ -20,6 +42,7 @@
 }
 
 .swiper-wrapper {
+  width: auto;
 }
 
 .swiper-horizontal > .swiper-pagination-bullets,
@@ -41,3 +64,4 @@
 .swiper-button-next::after {
   font-size: 1.5rem;
 }
+
