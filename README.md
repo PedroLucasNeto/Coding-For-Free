@@ -15,6 +15,6 @@ In this project we prefer use React with typescript to have a stronger typing an
 
 You could contribute in this project by forking, creating your branch and sending a pull request.
 
-|                                                           FOUNDER                                                            |                                                              FOUNDER                                                               |
+|                                                           Founder                                                            |                                                              Founder                                                               |
 | :-------------------------------------------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------------------------------------------: |
 | [<img src="https://github.com/HarlonGarcia.png?size=115" width=115><br><sub>@HarlonGarcia</sub>](https://github.com/HarlonGarcia) | [<img src="https://github.com/PedroLucasNeto.png?size=250" width=115><br><sub>@PedroLucasNeto</sub>](https://github.com/PedroLucasNeto) |
