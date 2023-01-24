@@ -125,7 +125,6 @@
       }
 
       p {
-
         line-height: 120%;
         color: color.$purple-50;
         margin-bottom: 2rem;
@@ -156,7 +155,6 @@
     margin: 0 auto;
     max-width: 72rem;
 
-
     > img {
       width: 40%;
       height: 24rem;
@@ -175,31 +173,18 @@
       }
     }
   }
-  // @include lg {
 
-  //   > img {
-  //     width: 40%;
-  //     height: 20rem;
-  //     margin-bottom: 0;
-  //   }
-  // }
   @include xl {
-
     > img {
       width: 30%;
       margin-bottom: 0;
     }
   }
   @include x2l {
-
     > img {
       width: 40%;
 
       margin-bottom: 0;
     }
-
   }
-
-
-
 }
