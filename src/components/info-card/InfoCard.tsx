@@ -27,7 +27,7 @@ const InfoCard = ({ contributor }: InfoCardProps) => {
       </div>
       <div className="info_list">
         {contactLinks.linkedin ? (
-          <a href={contactLinks.linkedin}>
+          <a href={contactLinks.linkedin} target="_blank">
             <button>
               <RiLinkedinFill className="icons" />
               <h3>LinkedIn Profile</h3>
@@ -35,7 +35,7 @@ const InfoCard = ({ contributor }: InfoCardProps) => {
           </a>
         ) : null}
         {contactLinks.github ? (
-          <a href={contactLinks.github}>
+          <a href={contactLinks.github} target="_blank">
             <button>
               <SiGithub className="icons" />
               <h3>Github Profile</h3>
@@ -43,7 +43,7 @@ const InfoCard = ({ contributor }: InfoCardProps) => {
           </a>
         ) : null}
         {contactLinks.email ? (
-          <a href={contactLinks.email}>
+          <a href={contactLinks.email} target="_blank">
             <button>
               <MdEmail className="icons" />
               <h3>Email</h3>
