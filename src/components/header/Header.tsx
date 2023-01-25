@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import ToggleButton from "../shared/toggle-button/ToggleButton";
 import "./Header.scss";
 
@@ -11,13 +11,13 @@ const Header = () => {
       <h1>CFF</h1>
       <ul className="header_nav">
         <li>
-          <Link to="/">Home</Link>
+          <NavLink to="/">Home</NavLink>
         </li>
         <li>
-          <Link to="/contact">Contact</Link>
+          <NavLink to="/contact">Contact</NavLink>
         </li>
         <li>
-          <Link to={"/aboutUs"}>About Us</Link>
+          <NavLink to="/aboutUs">About Us</NavLink>
         </li>
       </ul>
       <ToggleButton isActive={isActive} onToggle={setIsActive} />
