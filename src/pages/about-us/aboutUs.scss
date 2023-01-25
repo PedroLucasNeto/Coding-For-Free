@@ -9,14 +9,11 @@
   padding: 2rem;
 
   border-radius: 4px;
-
 }
 
 .about_box {
   display: flex;
   flex-direction: column;
-
-  background-color: rgba(color.$purple-900, 0.3);
 
   max-width: 100%;
   padding: 1rem;
@@ -24,6 +21,7 @@
   img {
     padding: 0.5rem;
   }
+
   .text_box {
     display: flex;
     flex-direction: column;
@@ -32,9 +30,10 @@
     font-weight: bold;
 
     padding: 1rem;
+
     h1 {
 
-      color: color.$purple-100;
+      color: color.$purple-400;
       margin-bottom: 0.5rem;
     }
 
@@ -53,7 +52,7 @@
   }
 
   @include md {
-    max-width: 35rem;
+    max-width: 30rem;
   }
 
   @include lg {
@@ -61,23 +60,26 @@
     flex-direction: row;
     max-width: 100%;
 
-
     .text_box {
       margin: auto 0;
       margin-right: 1rem;
     }
 
+    img {
+      object-fit: cover;
+      max-width: 30rem;
+      border-radius: 4px;
 
+    }
+  }
+
+  @include xl {
     img {
       object-fit: cover;
       max-width: 40rem;
       border-radius: 4px;
 
     }
-
-  }
-
-  @include xl {
   }
 
   @include xxl {
@@ -95,4 +97,3 @@
 // $screen-xxl-min: 1440px;
 // $screen-2xl-min: 1920px;
 // $screen-3xl-min: 2560px;
-
