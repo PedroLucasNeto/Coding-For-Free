@@ -13,6 +13,10 @@
   background-color: color.$black-700;
   border-radius: 2rem;
   overflow: hidden;
+
+  &:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 1);
+  }
 }
 
 .profile_info {
