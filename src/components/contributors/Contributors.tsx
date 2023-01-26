@@ -10,12 +10,18 @@ import "swiper/css/effect-fade";
 import "swiper/css/pagination";
 
 import "./Contributors.scss";
+import { motion } from "framer-motion";
 
 const Contributors = () => {
   const currentWidth = useWidth();
 
   return (
-    <section className="contributors">
+    <motion.section
+      initial={{ opacity: 0, scale: 0.5 }}
+      animate={{ opacity: 1, scale: 1 }}
+      transition={{ duration: 1 }}
+      className="contributors"
+    >
       <Swiper
         modules={[Navigation, EffectFade, Pagination]}
         effect="slide"
@@ -33,7 +39,7 @@ const Contributors = () => {
           </SwiperSlide>
         ))}
       </Swiper>
-    </section>
+    </motion.section>
   );
 };
 
