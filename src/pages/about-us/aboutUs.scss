@@ -20,6 +20,7 @@
 
   img {
     padding: 0.5rem;
+    border-radius: 5%;
   }
 
   .text_box {
@@ -27,7 +28,7 @@
     flex-direction: column;
 
     text-align: left;
-    font-weight: bold;
+
 
     padding: 1rem;
 
@@ -39,7 +40,9 @@
 
     p {
       color: color.$purple-50;
-      margin-bottom: 1.5rem;
+      margin-bottom: 0.5rem;
+      line-height: 120%;
+      font-weight: 500;
     }
   }
 
@@ -68,8 +71,6 @@
     img {
       object-fit: cover;
       max-width: 30rem;
-      border-radius: 4px;
-
     }
   }
 
@@ -77,8 +78,6 @@
     img {
       object-fit: cover;
       max-width: 40rem;
-      border-radius: 4px;
-
     }
   }
 
