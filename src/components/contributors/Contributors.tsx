@@ -1,32 +1,45 @@
 import InfoCard from "../info-card/InfoCard";
 import { contributors } from "../../utils/contributors";
-import { useWidth } from "../../hooks/useWidth";
-
+import { useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, EffectFade, Pagination, FreeMode } from "swiper";
+import { Navigation, EffectFade, Pagination } from "swiper";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/effect-fade";
 import "swiper/css/pagination";
 
 import "./Contributors.scss";
-import { motion } from "framer-motion";
+import { motion, useInView } from "framer-motion";
 
 const Contributors = () => {
-  const currentWidth = useWidth();
+  const sectionRef = useRef(null);
+  const isInView = useInView(sectionRef);
+
+  const animationSection = {
+    hidden: { opacity: 0, scale: 0 },
+    visible: {
+      opacity: 1,
+      scale: 1,
+      transition: {
+        type: "spring",
+        bounce: 0.4,
+        duration: 2,
+      },
+    },
+  };
 
   return (
     <motion.section
-      initial={{ opacity: 0, scale: 0.5 }}
-      animate={{ opacity: 1, scale: 1 }}
-      transition={{ duration: 1 }}
+      ref={sectionRef}
+      variants={animationSection}
+      initial="hidden"
+      animate={isInView ? "visible" : "invisible"}
       className="contributors"
     >
       <Swiper
         modules={[Navigation, EffectFade, Pagination]}
         effect="slide"
         speed={800}
-        freeMode={true}
         slidesPerView={"auto"}
         spaceBetween={40}
         pagination={{ clickable: true }}

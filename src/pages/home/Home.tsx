@@ -1,6 +1,8 @@
 import "./Home.scss";
 import { TbArrowBigDown } from "react-icons/tb";
 import { motion } from "framer-motion";
+import { useRef } from "react";
+import { useInView } from "framer-motion";
 import coding_image from "../../assets/images/coding.jpg";
 import Social from "../../components/social/Social";
 import Contributors from "../../components/contributors/Contributors";
@@ -24,6 +26,9 @@ const item = {
 };
 
 const Home = () => {
+  const aboutRef = useRef(null);
+  const isInView = useInView(aboutRef);
+
   return (
     <div className="home_container">
       <section className="home_header">
@@ -35,10 +40,11 @@ const Home = () => {
         <img src={coding_image} alt="Desenvolvedor" />
         <div className="about_project">
           <motion.div
+            ref={aboutRef}
             className="about_section"
             variants={container}
             initial="hidden"
-            animate="visible"
+            animate={isInView ? "visible" : "invisible"}
           >
             <motion.h2 variants={item}>About Project</motion.h2>
             <motion.p variants={item}>

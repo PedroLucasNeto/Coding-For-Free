@@ -18,8 +18,8 @@ function AboutUs() {
             </p>
             <p>
               To solve this problem we created <mark>Coding For Free</mark>
-              which was a way help people build their online presence while
-              we're facing all the software development cycle's problems.
+              which was a way of helping people build their online presence
+              while we're facing all the software development cycle's problems.
             </p>
           </div>
 
