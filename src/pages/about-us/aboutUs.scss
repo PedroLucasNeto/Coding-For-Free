@@ -14,48 +14,48 @@
 .about_box {
   display: flex;
   flex-direction: column;
+  justify-content: center;
 
   max-width: 100%;
   padding: 1rem;
 
-  img {
-    padding: 0.5rem;
+  align-items: baseline;
+
+  h1 {
+    color: color.$purple-400;
+    margin-bottom: 0.5rem;
+  }
+
+  p {
+    color: color.$purple-50;
+    margin-bottom: 0.5rem;
+    line-height: 120%;
+    font-weight: 500;
+  }
+
+  div {
+    padding: 1rem;
+
+  }
+
+  .expImg {
+    width: 60px;
+    transform: translateY(10px);
+    object-fit: cover;
+    padding: 0rem 0.3rem;
     border-radius: 5%;
   }
 
-  .text_box {
-    display: flex;
-    flex-direction: column;
 
-    text-align: left;
-
-
-    padding: 1rem;
-
-    h1 {
-
-      color: color.$purple-400;
-      margin-bottom: 0.5rem;
-    }
-
-    p {
-      color: color.$purple-50;
-      margin-bottom: 0.5rem;
-      line-height: 120%;
-      font-weight: 500;
-    }
-  }
 
   @include sm {
     max-width: 30rem;
 
-    .text_box {
-      text-align: center;
-    }
   }
 
   @include md {
-    max-width: 30rem;
+    max-width: 42rem;
+
   }
 
   @include lg {
@@ -63,33 +63,67 @@
     flex-direction: row;
     max-width: 100%;
 
-    .text_box {
-      margin: auto 0;
-      margin-right: 1rem;
-    }
-
-    img {
-      object-fit: cover;
-      max-width: 30rem;
-    }
   }
 
   @include xl {
-    img {
-      object-fit: cover;
-      max-width: 40rem;
-    }
   }
 
   @include xxl {
-    width: 90rem;
+    max-width: 90rem;
     margin: auto;
-
   }
 
+
 }
 
-.expImg {
-  width: 60px;
-  transform: translateY(10px) ;
+.aboutUs_header {
+  position: relative;
+  height: 24rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  padding: 2rem 1.5rem;
+  margin-bottom: 1rem;
+  text-align: center;
+
+  > h1 {
+    margin-bottom: 0.5rem;
+    font-size: 3rem;
+    font-weight: 900;
+    color: color.$purple-400;
+  }
+
+  > strong {
+    font-size: 1.75rem;
+    line-height: 120%;
+    color: color.$purple-50;
+  }
 }
+
+.aboutUs_header::before {
+  content: " ";
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  display: block;
+  width: 100%;
+  height: 100%;
+
+  background: url(../../assets/images/aboutUsImg.jpg);
+  background-size: cover;
+  background-position: 50% 80%;
+
+  filter: grayscale(0.2) opacity(0.05);
+}
+
+// $screen-sm-min: 576px;
+// $screen-md-min: 768px;
+// $screen-lg-min: 992px;
+// $screen-xl-min: 1200px;
+// $screen-xxl-min: 1440px;
+// $screen-2xl-min: 1920px;
+// $screen-3xl-min: 2560px;
