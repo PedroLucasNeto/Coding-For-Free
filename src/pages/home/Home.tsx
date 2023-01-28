@@ -21,8 +21,8 @@ const container = {
 };
 
 const item = {
-  hidden: { x: 100, opacity: 0 },
-  visible: { x: 0, opacity: 1 },
+  hidden: { scale: 0, opacity: 0 },
+  visible: { scale: 1, opacity: 1 },
 };
 
 const Home = () => {
@@ -46,23 +46,31 @@ const Home = () => {
             initial="hidden"
             animate={isInView ? "visible" : "invisible"}
           >
-            <motion.h2 variants={item}>About Project</motion.h2>
-            <motion.p variants={item}>
-              <mark>Coding For Free</mark>
-              is a way we found to acquire experience while we have not yet been
-              exposed to the market.
-            </motion.p>
-            <motion.h2 variants={item}>Task</motion.h2>
-            <motion.p variants={item}>
-              Our goal is to help you or your company to establish a strong
-              online presence by creating simple but powerfull landing pages.
-            </motion.p>
-            <motion.h2 variants={item}>Get your own website!</motion.h2>
-            <motion.p variants={item}>
-              If you're starting a new business or have an idea that needs to be
-              shown to the worldyou can get your landing page
-              <mark>for free</mark>
-            </motion.p>
+            <motion.div>
+              <h2>About Project</h2>
+              <p>
+                <mark>Coding For Free</mark>
+                is a way we found to acquire experience while we have not yet
+                been exposed to the market.
+              </p>
+            </motion.div>
+
+            <motion.div variants={item}>
+              <h2>Task</h2>
+              <p>
+                Our goal is to help you or your company to establish a strong
+                online presence by creating simple but powerfull landing pages.
+              </p>
+            </motion.div>
+
+            <motion.div variants={item}>
+              <p>
+                <h2>Change this title!</h2>
+                If you're starting a new business or have an idea that needs to
+                be shown to the worldyou can get your landing page
+                <mark>for free</mark>
+              </p>
+            </motion.div>
           </motion.div>
         </div>
       </section>
