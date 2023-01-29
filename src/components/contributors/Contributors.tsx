@@ -36,6 +36,9 @@ const Contributors = () => {
       animate={isInView ? "visible" : "invisible"}
       className="contributors"
     >
+      <div>
+        <h2>Founders</h2>
+      </div>
       <Swiper
         modules={[Navigation, EffectFade, Pagination]}
         effect="slide"
