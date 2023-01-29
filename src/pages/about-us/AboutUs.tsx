@@ -5,7 +5,7 @@ import { NavLink } from "react-router-dom";
 
 function AboutUs() {
   const container = {
-    hidden: { opacity: 1, scale: 0 },
+    hidden: { opacity: 0, scale: 0 },
     visible: {
       opacity: 1,
       scale: 1,

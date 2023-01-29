@@ -11,7 +11,7 @@
 
   overflow: hidden;
 
-  h2 {
+  > h2 {
     font-size: 2rem;
     color: color.$purple-400;
     margin-bottom: 2rem;
@@ -30,8 +30,9 @@
     width:  100%;
 
     overflow: visible;
-
   }
+
+
 
 }
 
