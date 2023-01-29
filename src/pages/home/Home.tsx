@@ -64,10 +64,10 @@ const Home = () => {
             </motion.div>
 
             <motion.div variants={item}>
-              <h2>Change this title!</h2>
+              <h2>What's your needs?</h2>
               <p>
                 If you're starting a new business or have an idea that needs to
-                be shown to the worldyou can get your landing page
+                be shown to the world you can get your landing page
                 <mark>for free</mark>
               </p>
             </motion.div>
