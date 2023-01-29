@@ -13,7 +13,7 @@ const social_links = [
     title: "Github",
     url: "https://github.com/PedroLucasNeto/Coding-For-Free",
   },
-  { icon: <RiLinkedinFill />, title: "Linkedin", url: "" },
+  // { icon: <RiLinkedinFill />, title: "Linkedin", url: "" },
 ];
 
 const Social = () => {

@@ -2,14 +2,25 @@
 @use "../../styles/breakpoints" as *;
 
 .contributors {
-  padding: 2rem;
-  overflow: hidden;
-  margin: 0 auto;
+  text-align: center;
+  flex-direction: column;
 
   max-width: 22rem;
+  padding: 2rem;
+  margin: 0 auto;
+
+  overflow: hidden;
+
+  h2 {
+    font-size: 2rem;
+    color: color.$purple-400;
+    margin-bottom: 2rem;
+  }
 
   @include sm {
-    max-width: 42rem;
+    margin: 0 auto;
+    max-width: 48rem;
+    overflow: hidden;
   }
 
   @include xl {
@@ -17,6 +28,9 @@
     align-items: center;
     justify-content: center;
     width:  100%;
+
+    overflow: visible;
+
   }
 
 }
@@ -26,7 +40,7 @@
   max-width: 38rem;
 
   @include sm {
-    max-width: 800%;
+    max-width: 80%;
   }
 
   @include xl {

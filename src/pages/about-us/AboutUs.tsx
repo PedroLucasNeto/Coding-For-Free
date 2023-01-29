@@ -1,6 +1,7 @@
 import "./AboutUs.scss";
 import Social from "../../components/social/Social";
 import { motion } from "framer-motion";
+import { NavLink } from "react-router-dom";
 
 function AboutUs() {
   const container = {
@@ -42,6 +43,13 @@ function AboutUs() {
             </p>
           </motion.div>
           <motion.div variants={item}>
+            <h1>The team</h1>
+            <p>
+              Harlon and Pedro. Two university friends who faced the same
+              problem: How to get experience without the first opportunity.
+            </p>
+          </motion.div>
+          <motion.div variants={item}>
             <h1>How it started?</h1>
             <p>
               We wanted to do more then just portifolio we wanted to create real
@@ -54,13 +62,6 @@ function AboutUs() {
             <p>
               That was our goal! Thinking of that we recruited people close to
               us that needed websites and offered them our time and skills!
-            </p>
-          </motion.div>
-          <motion.div variants={item}>
-            <h1>The team</h1>
-            <p>
-              Harlon and Pedro, two university friends who faced the same
-              problem: How to get experience without the first opportunity.
             </p>
           </motion.div>
         </motion.div>
