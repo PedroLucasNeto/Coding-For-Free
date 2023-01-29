@@ -118,8 +118,12 @@
     .about_section {
       margin-bottom: 1.5rem;
 
+      > div {
+        margin-bottom: 2rem;
+      }
+
       h2 {
-        margin-bottom: 1rem;
+        margin-bottom: 0.5rem;
         font-size: 1.375rem;
         color: color.$purple-400;
       }
@@ -127,7 +131,6 @@
       p {
         line-height: 120%;
         color: color.$purple-50;
-        margin-bottom: 2rem;
       }
     }
   }

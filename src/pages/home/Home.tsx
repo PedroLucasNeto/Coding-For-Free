@@ -8,14 +8,13 @@ import Social from "../../components/social/Social";
 import Contributors from "../../components/contributors/Contributors";
 
 const container = {
-  hidden: { opacity: 0, scale: 0 },
+  hidden: { opacity: 0, scale: 1 },
   visible: {
     opacity: 1,
     scale: 1,
     transition: {
-      duration: 0.5,
       delayChildren: 0.5,
-      staggerChildren: 0.5,
+      staggerChildren: 0.4,
     },
   },
 };
@@ -54,7 +53,6 @@ const Home = () => {
                 been exposed to the market.
               </p>
             </motion.div>
-
             <motion.div variants={item}>
               <h2>Task</h2>
               <p>
@@ -62,7 +60,6 @@ const Home = () => {
                 online presence by creating simple but powerfull landing pages.
               </p>
             </motion.div>
-
             <motion.div variants={item}>
               <h2>What's your needs?</h2>
               <p>

@@ -22,8 +22,8 @@ const Contributors = () => {
       scale: 1,
       transition: {
         type: "spring",
-        bounce: 0.4,
-        duration: 2,
+        bounce: 0.2,
+        duration: 1.5,
       },
     },
   };
