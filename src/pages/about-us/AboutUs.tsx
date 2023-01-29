@@ -10,8 +10,9 @@ function AboutUs() {
       opacity: 1,
       scale: 1,
       transition: {
-        delayChildren: 0.3,
-        staggerChildren: 0.2,
+        duration: 1,
+        delayChildren: 1,
+        staggerChildren: 0.5,
       },
     },
   };

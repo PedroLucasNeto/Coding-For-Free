@@ -3,6 +3,7 @@ import { TbArrowBigDown } from "react-icons/tb";
 import { motion } from "framer-motion";
 import { useRef } from "react";
 import { useInView } from "framer-motion";
+import { Link } from "react-router-dom";
 import coding_image from "../../assets/images/coding.jpg";
 import Social from "../../components/social/Social";
 import Contributors from "../../components/contributors/Contributors";
@@ -58,17 +59,19 @@ const Home = () => {
             <motion.div variants={item}>
               <h2>Task</h2>
               <p>
-                Our goal is to help you or your company to establish a strong
-                online presence by creating simple but powerfull landing pages.
+                Our goal was to help the people next to us to establish a strong
+                online presence by creating simple but powerfull landing pages
+                and with that acquire experience.
               </p>
             </motion.div>
 
             <motion.div variants={item}>
-              <h2>Change this title!</h2>
+              <h2>See more!</h2>
               <p>
-                If you're starting a new business or have an idea that needs to
-                be shown to the worldyou can get your landing page
-                <mark>for free</mark>
+                If you liked this idea and want to know a litle bit more
+                <button>
+                  <Link to={"/aboutUs"}> click here!</Link>
+                </button>
               </p>
             </motion.div>
           </motion.div>
