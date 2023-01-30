@@ -36,6 +36,10 @@
   div {
     padding: 1rem;
 
+    &:hover {
+      scale: 1.2;
+      cursor: default;
+    }
   }
 
   .expImg {

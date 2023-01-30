@@ -1,7 +1,6 @@
 import "./AboutUs.scss";
 import Social from "../../components/social/Social";
 import { motion } from "framer-motion";
-import { NavLink } from "react-router-dom";
 
 function AboutUs() {
   const container = {
