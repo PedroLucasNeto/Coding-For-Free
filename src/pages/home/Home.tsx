@@ -9,14 +9,13 @@ import Social from "../../components/social/Social";
 import Contributors from "../../components/contributors/Contributors";
 
 const container = {
-  hidden: { opacity: 0, scale: 0 },
+  hidden: { opacity: 0, scale: 1 },
   visible: {
     opacity: 1,
     scale: 1,
     transition: {
-      duration: 0.5,
       delayChildren: 0.5,
-      staggerChildren: 0.5,
+      staggerChildren: 0.4,
     },
   },
 };
@@ -50,12 +49,11 @@ const Home = () => {
             <motion.div variants={item}>
               <h2>About Project</h2>
               <p>
-                +<mark>Coding For Free</mark>
+                <mark>Coding For Free</mark>
                 is a way we found to acquire experience while we have not yet
                 been exposed to the market.
               </p>
             </motion.div>
-
             <motion.div variants={item}>
               <h2>Task</h2>
               <p>
@@ -64,7 +62,6 @@ const Home = () => {
                 and with that acquire experience.
               </p>
             </motion.div>
-
             <motion.div variants={item}>
               <h2>See more!</h2>
               <p>
