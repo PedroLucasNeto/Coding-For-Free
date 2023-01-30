@@ -5,13 +5,14 @@ import { NavLink } from "react-router-dom";
 
 function AboutUs() {
   const container = {
-    hidden: { opacity: 1, scale: 0 },
+    hidden: { opacity: 0, scale: 0 },
     visible: {
       opacity: 1,
       scale: 1,
       transition: {
-        delayChildren: 0.3,
-        staggerChildren: 0.2,
+        duration: 1,
+        delayChildren: 1,
+        staggerChildren: 0.5,
       },
     },
   };
@@ -60,8 +61,9 @@ function AboutUs() {
           <motion.div variants={item}>
             <h1>Why is it free?</h1>
             <p>
-              That was our goal! Thinking of that we recruited people close to
-              us that needed websites and offered them our time and skills!
+              Because we needed experience and weren't ready to charge. Thinking
+              of that we recruited people close to us that needed websites and
+              offered them our time and skills!
             </p>
           </motion.div>
         </motion.div>
