@@ -2,16 +2,28 @@
 @use "../../styles/breakpoints" as *;
 
 .header_container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+
+  width: 100%;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
 
   padding: 1.5rem 2rem;
-  background-color: rgba(color.$purple-500, 0.1);
+  background-color: rgba(color.$purple-900, 0.9);
+  backdrop-filter: blur(3px);
 
   > h1 {
     color: color.$purple-50;
     font-size: 1.5rem;
+  }
+
+  @include sm {
+    position: relative;
   }
 }
 
@@ -20,8 +32,9 @@
   justify-content: center;
   align-items: center;
   gap: 1.5rem;
+
   a {
-    color: color.$purple-50
+    color: color.$purple-50;
   }
 
   > li {

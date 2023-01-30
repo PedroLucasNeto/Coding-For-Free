@@ -12,7 +12,7 @@
   :nth-child(3) {
     width: 2rem;
     height: 0.25rem;
-    background-color: white;
+    background-color: color.$purple-50;
     border-radius: 0.5rem;
     transition: all 0.3s ease-in-out;
   }
@@ -23,6 +23,11 @@
 }
 
 .toggle_active {
+  :nth-child(1),
+  :nth-child(3) {
+    background-color: color.$yellow-300;
+  }
+
   :nth-child(1) {
     transform: translateY(10px) rotate(-45deg);
   }
