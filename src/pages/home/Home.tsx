@@ -47,10 +47,10 @@ const Home = () => {
             initial="hidden"
             animate={isInView ? "visible" : "invisible"}
           >
-            <motion.div>
+            <motion.div variants={item}>
               <h2>About Project</h2>
               <p>
-                <mark>Coding For Free</mark>
+                +<mark>Coding For Free</mark>
                 is a way we found to acquire experience while we have not yet
                 been exposed to the market.
               </p>
@@ -68,7 +68,8 @@ const Home = () => {
             <motion.div variants={item}>
               <h2>See more!</h2>
               <p>
-                If you liked this idea and want to know a litle bit more
+                If you liked this idea and want to know a litle bit more about
+                us
                 <button>
                   <Link to={"/aboutUs"}> click here!</Link>
                 </button>

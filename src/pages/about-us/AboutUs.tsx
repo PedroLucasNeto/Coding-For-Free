@@ -61,8 +61,9 @@ function AboutUs() {
           <motion.div variants={item}>
             <h1>Why is it free?</h1>
             <p>
-              That was our goal! Thinking of that we recruited people close to
-              us that needed websites and offered them our time and skills!
+              Because we needed experience and weren't ready to charge. Thinking
+              of that we recruited people close to us that needed websites and
+              offered them our time and skills!
             </p>
           </motion.div>
         </motion.div>
