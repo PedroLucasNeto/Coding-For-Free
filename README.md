@@ -12,9 +12,11 @@ In this project we prefer use React with typescript to have a stronger typing an
 
 #### Libraries
 
-- [FramerMotion](https://www.framer.com/motion)
+- [React Tostify](https://fkhadra.github.io/react-toastify/introduction/)
+- [Framer Motion](https://www.framer.com/motion)
+- [React Icons](https://react-icons.github.io/react-icons)
 - [Swiper](https://swiperjs.com)
-- [React-Icons](https://react-icons.github.io/react-icons)
+- [Email Js](https://www.emailjs.com/)
 
 ## Contributors
 
