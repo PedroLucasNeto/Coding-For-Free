@@ -1,8 +1,11 @@
 @use "../../styles/colors" as color;
 @use "../../styles/breakpoints" as *;
 
-.fix_height {
+.firs_container {
   margin-top: 4.75rem;
+  @include sm {
+    margin-top: 0;
+  }
 }
 
 .about_container {
@@ -47,6 +50,7 @@
   }
 
   @include sm {
+    margin-top: 0;
     max-width: 30rem;
 
   }

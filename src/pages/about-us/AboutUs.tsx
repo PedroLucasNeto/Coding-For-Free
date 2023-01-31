@@ -24,7 +24,7 @@ function AboutUs() {
     },
   };
   return (
-    <div className="fix_height">
+    <div className="first_container">
       <section className="about_us_header">
         <h1>About Us</h1>
       </section>

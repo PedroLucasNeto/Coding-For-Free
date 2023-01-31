@@ -3,6 +3,10 @@
 
 .home_container {
   margin-top: 4.75rem;
+
+  @include sm {
+    margin-top: 0;
+  }
 }
 
 
