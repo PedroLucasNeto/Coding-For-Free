@@ -9,11 +9,14 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@emailjs/browser": "^3.10.0",
     "framer-motion": "^8.5.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.7.1",
+    "react-intersection-observer": "^9.4.1",
     "react-router-dom": "^6.7.0",
+    "react-toastify": "^9.1.1",
     "sass": "^1.57.1",
     "swiper": "^8.4.6",
     "yarn": "^1.22.19"

@@ -12,6 +12,8 @@ dist
 dist-ssr
 *.local
 
+#misc
+src/utils/email_key.ts
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json

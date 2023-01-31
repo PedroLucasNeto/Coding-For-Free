@@ -43,26 +43,28 @@ function AboutUs() {
             </p>
           </motion.div>
           <motion.div variants={item}>
-            <h1>The team</h1>
+            <h1>The team!</h1>
             <p>
               Harlon and Pedro. Two university friends who faced the same
-              problem: How to get experience without the first opportunity.
+              problem: How to get experience without having the first
+              opportunity.
             </p>
           </motion.div>
           <motion.div variants={item}>
             <h1>How it started?</h1>
             <p>
-              We wanted to do more then just portifolio we wanted to create real
-              websites and get the software development cycle full experience.
+              We wanted to do more then just portifolio we'd like get the
+              experience of full cycle software development. With Coding For
+              Free we create real websites.
               <mark>From sketch to release!</mark>
             </p>
           </motion.div>
           <motion.div variants={item}>
             <h1>Why is it free?</h1>
             <p>
-              Because we needed experience and weren't ready to charge. Thinking
-              of that we recruited people close to us that needed websites and
-              offered them our time and skills!
+              Because we needed experience and weren't experienced enough to
+              charge. With that in mind we recruited some people close to us
+              that needed websites and offered them our time and skills!
             </p>
           </motion.div>
         </motion.div>
