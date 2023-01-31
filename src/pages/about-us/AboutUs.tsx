@@ -1,7 +1,6 @@
 import "./AboutUs.scss";
 import Social from "../../components/social/Social";
 import { motion } from "framer-motion";
-import { NavLink } from "react-router-dom";
 
 function AboutUs() {
   const container = {
@@ -10,23 +9,23 @@ function AboutUs() {
       opacity: 1,
       scale: 1,
       transition: {
-        duration: 1,
-        delayChildren: 1,
+        duration: 0.5,
+        delayChildren: 0.5,
         staggerChildren: 0.5,
       },
     },
   };
 
   const item = {
-    hidden: { y: 20, opacity: 0 },
+    hidden: { scale: 0, opacity: 0 },
     visible: {
-      y: 0,
+      scale: 1,
       opacity: 1,
     },
   };
   return (
-    <div>
-      <section className="aboutUs_header">
+    <div className="fix_height">
+      <section className="about_us_header">
         <h1>About Us</h1>
       </section>
       <section className="about_container">
