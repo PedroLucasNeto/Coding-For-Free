@@ -1,7 +1,7 @@
 @use "../../styles/colors" as color;
 @use "../../styles/breakpoints" as *;
 
-.firs_container {
+.first_container {
   margin-top: 4.75rem;
   @include sm {
     margin-top: 0;

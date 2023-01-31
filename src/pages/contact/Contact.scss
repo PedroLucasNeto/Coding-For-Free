@@ -159,12 +159,12 @@
 
     .form_container {
 
-      // > h2 {
-      //   margin-bottom: 1rem;
-      // }
+      > h2 {
+        // padding: 1rem;
+      }
 
       > label {
-        margin-bottom: 1rem;
+        margin-bottom: 0.5rem;
       }
 
       > input {
@@ -183,7 +183,7 @@
     .info_container {
 
       padding: 2.5rem;
-      height: 36rem;
+      height: 35rem;
       > h2 {
         font-size: 1.9rem;
       }

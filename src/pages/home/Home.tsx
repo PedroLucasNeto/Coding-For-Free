@@ -33,7 +33,7 @@ const Home = () => {
     <div className="home_container">
       <section className="home_header">
         <h1>Coding For Free</h1>
-        <strong>Elevating your online presence</strong>
+        <strong>Elevating online presence</strong>
         <TbArrowBigDown className="see_more" />
       </section>
       <section className="home_project">
@@ -59,7 +59,7 @@ const Home = () => {
               <p>
                 Our goal was to help the people next to us to establish a strong
                 online presence by creating simple but powerfull landing pages
-                and with that acquire experience.
+                and with grow as professionals.
               </p>
             </motion.div>
             <motion.div variants={item}>
@@ -77,14 +77,6 @@ const Home = () => {
       </section>
       <Contributors />
       <Social />
-      <div>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda
-          rerum itaque ducimus voluptatibus qui nobis. Porro vero odio
-          exercitationem, quibusdam veritatis aliquid, adipisci maxime
-          necessitatibus mollitia nulla, dolores omnis voluptatem.
-        </p>
-      </div>
     </div>
   );
 };
