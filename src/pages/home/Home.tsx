@@ -68,7 +68,7 @@ const Home = () => {
                 If you liked this idea and want to know a litle bit more about
                 us
                 <button>
-                  <Link to={"/aboutUs"}> click here!</Link>
+                  <Link to={"/about"}> click here!</Link>
                 </button>
               </p>
             </motion.div>

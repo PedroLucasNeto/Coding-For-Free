@@ -1,5 +1,5 @@
 import "./Contact.scss";
-import { TbMail, TbPhone, TbMapPin, TbWorld } from "react-icons/tb";
+import { TbMail, TbBrandWhatsapp, TbMapPin, TbWorld } from "react-icons/tb";
 import { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import { contactInfo } from "../../utils/email_key";
@@ -77,23 +77,35 @@ const Contact = () => {
         <h2>More info</h2>
         <ul>
           <li>
-            <TbMapPin className="" />
-            <span className="title">Address:</span> Campina Grande, Paraíba,
-            Brazil.
+            <a
+              href="https://goo.gl/maps/kU7wxdBnobnL6SC26"
+              target={"_blank"}
+              className="title"
+            >
+              <TbMapPin />
+              <h3>Address</h3>
+            </a>
           </li>
           <li>
-            <TbPhone className="" />
-            <span className="title">Phone:</span> +55 83 9 9810-7584
+            <a href="" className="title">
+              <TbBrandWhatsapp />
+              <h3>WhatsApp</h3>
+            </a>
           </li>
           <li>
-            <TbMail className="" />
-            <span className="title">Email:</span> contactcodingforfree@gmail.com
+            <a href="" target={"_blank"} className="title">
+              <TbMail />
+              <h3>Email</h3>
+            </a>
           </li>
           <li>
-            <TbWorld className="" />
-            <span className="title">Site: </span>
-            <a href="https://harlon.netlify.app/" target={"_blank"}>
-              https://harlon.netlify.app/
+            <a
+              href="https://harlon.netlify.app/"
+              target={"_blank"}
+              className="title"
+            >
+              <TbWorld />
+              <h3>Web Site</h3>
             </a>
           </li>
         </ul>
