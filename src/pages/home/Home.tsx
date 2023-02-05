@@ -7,6 +7,7 @@ import { Link } from "react-router-dom";
 import coding_image from "../../assets/images/coding.jpg";
 import Social from "../../components/social/Social";
 import Contributors from "../../components/contributors/Contributors";
+import Process from "../../components/process/Process";
 
 const container = {
   hidden: { opacity: 0, scale: 1 },
@@ -75,6 +76,7 @@ const Home = () => {
           </motion.div>
         </div>
       </section>
+      <Process />
       <Contributors />
       <Social />
     </div>
