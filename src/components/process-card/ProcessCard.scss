@@ -1,0 +1,40 @@
+@use "../../styles/breakpoints" as *;
+@use "../../styles/colors" as color;
+
+
+.process_card {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: left;
+
+background-color: rgba(color.$purple-900, 0.3);
+width: 100%;
+height: 300px;
+
+padding: 2rem;
+
+margin-bottom: 1rem;
+
+&:hover{
+  scale: 1.1;
+}
+
+> h2 {
+margin-bottom: 2rem;
+
+color: color.$purple-50;;
+}
+
+> p {
+  height: 150px;
+
+  color: color.$purple-50;;
+}
+
+@include sm {
+  width: 300px;
+
+}
+}
+
