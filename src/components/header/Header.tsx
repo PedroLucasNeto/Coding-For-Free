@@ -10,10 +10,15 @@ const Header = () => {
   return (
     <>
       <div className="header_container">
-        <h1>CFF</h1>
+        <NavLink to="/" end>
+          <img src="src/assets/images/CFF-ICON-WHITE.png" alt="" />
+        </NavLink>
+
         <ul className="header_nav">
           <li>
-            <NavLink to="/">Home</NavLink>
+            <NavLink to="/" end>
+              Home
+            </NavLink>
           </li>
           <li>
             <NavLink to="/contact">Contact</NavLink>
