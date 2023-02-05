@@ -51,7 +51,7 @@ function AboutUs() {
             </p>
           </motion.div>
           <motion.div variants={item}>
-            <h1>How it started?</h1>
+            <h1>How it started</h1>
             <p>
               We wanted to do more then just portifolio we'd like get the
               experience of full cycle software development. With Coding For

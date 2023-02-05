@@ -2,7 +2,7 @@ export const processes = [
   {
     title: "Selection",
     description:
-      "First we find someone in need of a website. We prioritize people close to us that have small business or are free agents.",
+      "First we find someone who need a website. We prioritize people close to us that have small business or are free agents. Those are probably going to be family or friends.",
     image: "src/assets/images/Selection.png",
   },
 
@@ -16,7 +16,7 @@ export const processes = [
   {
     title: "Mapping and Sketching",
     description:
-      "After identifying the client's needs we start mapping the pages the site is going to have, the sections it may need and how they're going to interact. After that we design a prototype using Figma to guide us through the process.",
+      "After identifying the client's needs we start mapping the pages and sections the site is going to have. After that we design a prototype using Figma to guide us through the process.",
     image: "src/assets/images/Mapping.png",
   },
 
