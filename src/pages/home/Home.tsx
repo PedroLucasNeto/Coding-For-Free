@@ -60,7 +60,7 @@ const Home = () => {
               <p>
                 Our goal was to help the people next to us to establish a strong
                 online presence by creating simple but powerfull landing pages
-                and with grow as professionals.
+                and with that grow as professionals.
               </p>
             </motion.div>
             <motion.div variants={item}>
