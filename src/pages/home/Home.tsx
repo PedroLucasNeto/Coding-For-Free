@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { useRef } from "react";
 import { useInView } from "framer-motion";
 import { Link } from "react-router-dom";
-import coding_image from "../../assets/images/coding.jpg";
+import coding_image from "/assets/images/coding.jpg";
 import Social from "../../components/social/Social";
 import Contributors from "../../components/contributors/Contributors";
 import Process from "../../components/process/Process";

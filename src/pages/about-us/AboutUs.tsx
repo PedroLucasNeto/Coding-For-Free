@@ -75,12 +75,4 @@ function AboutUs() {
     </div>
   );
 }
-
-{
-  /* <img
-className="expImg"
-src="src/assets/images/exp.png"
-alt="experience initials."
-/> */
-}
 export default AboutUs;

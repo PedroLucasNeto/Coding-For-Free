@@ -11,7 +11,7 @@ const Header = () => {
     <>
       <div className="header_container">
         <NavLink to="/" end>
-          <img src="src/assets/images/CFF-ICON-WHITE.png" alt="" />
+          <img src="/assets/images/CFF-ICON-WHITE.png" alt="" />
         </NavLink>
 
         <ul className="header_nav">

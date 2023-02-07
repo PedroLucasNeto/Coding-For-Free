@@ -87,13 +87,21 @@ const Contact = () => {
             </a>
           </li>
           <li>
-            <a href="" className="title">
+            <a
+              href="https://wa.me/5583998107584"
+              target={"_blank"}
+              className="title"
+            >
               <TbBrandWhatsapp />
               <h3>WhatsApp</h3>
             </a>
           </li>
           <li>
-            <a href="" target={"_blank"} className="title">
+            <a
+              href="mailto:contactcodingforfree@gmail.com"
+              target={"_blank"}
+              className="title"
+            >
               <TbMail />
               <h3>Email</h3>
             </a>

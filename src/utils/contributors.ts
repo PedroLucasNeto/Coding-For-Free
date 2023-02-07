@@ -2,7 +2,7 @@ export const contributors = [
   {
     name: "Pedro Lucas",
     role: "Founder",
-    picture: "src/assets/images/contributors_pictures/pedro_lucas.jpg",
+    picture: "/assets/images/contributors_pictures/pedro_lucas.jpg",
     contactLinks: {
       linkedin: "https://www.linkedin.com/in/pedrolucasneto/",
       github: "https://github.com/PedroLucasNeto",
@@ -12,8 +12,8 @@ export const contributors = [
   {
     name: "Harlon Garcia",
     role: "Co-founder",
-    picture: "src/assets/images/contributors_pictures/harlon_garcia.jpeg",
-    
+    picture: "/assets/images/contributors_pictures/harlon_garcia.jpeg",
+
     contactLinks: {
       linkedin: "https://www.linkedin.com/in/harlongarcia/",
       github: "https://github.com/HarlonGarcia",
