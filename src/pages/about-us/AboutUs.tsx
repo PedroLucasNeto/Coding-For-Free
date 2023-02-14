@@ -38,33 +38,40 @@ function AboutUs() {
           <motion.div variants={item}>
             <h1>Coding For Free?</h1>
             <p>
-              Coding For Free is a project we developed to help people build
-              their online presence by offering them free websites.
+              Coding For Free is a team effort to help people build their own
+              websites for free! Our goal is to empower individuals and small
+              businesses to showcase their work online without breaking the
+              bank.
             </p>
           </motion.div>
           <motion.div variants={item}>
             <h1>The team!</h1>
             <p>
-              Harlon and Pedro. Two university friends who faced the same
-              problem: How to get experience without having the first
-              opportunity.
+              Pedro Lucas and Harlon Garcia. Two university friends who faced
+              the same problem: How to get experience without having the first
+              opportunity. Join us in our mission to build meaningful,
+              functional websites that make a difference!"
             </p>
           </motion.div>
           <motion.div variants={item}>
             <h1>How it started</h1>
             <p>
-              We wanted to do more then just portifolio we'd like get the
-              experience of full cycle software development. With Coding For
-              Free we create real websites.
+              We wanted to do more then just portifolio - we wanted to
+              experience the full cycle of software development and give back to
+              the community. We design and develop real websites for individuals
+              and small businesses.
               <mark>From sketch to release!</mark>
             </p>
           </motion.div>
           <motion.div variants={item}>
             <h1>Why is it free?</h1>
             <p>
-              Because we needed experience and weren't experienced enough to
-              charge. With that in mind we recruited some people close to us
-              that needed websites and offered them our time and skills!
+              We wanted to make our portfolio projects come to life, that goes
+              beyond just showcasing our skills. Unlike many developers who only
+              create portfolio pieces, we aim to launch real websites that
+              people can actually use. With this, we're not just demonstrating
+              our abilities - we're helping our community and gaining valuable
+              experience.
             </p>
           </motion.div>
         </motion.div>
