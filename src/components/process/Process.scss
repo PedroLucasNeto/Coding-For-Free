@@ -16,7 +16,7 @@
 .process_section::before {
   content: '';
   width: 50%;
-  border-top: solid color.$purple-900;;
+  border-top: solid color.$purple-900;
   border-width: 0.2rem;
 
   margin-bottom: 2rem;
@@ -26,7 +26,7 @@
 .process_section::after {
   content: '';
   width: 50%;
-  border-bottom: solid color.$purple-900;;
+  border-bottom: solid color.$purple-900;
   border-width: 0.2rem;
 
   margin-top: 2rem;
