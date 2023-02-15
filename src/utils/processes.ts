@@ -21,7 +21,7 @@ export const processes = [
     title: "Mapping and Sketching",
     topics: [
       "After identifying the client's needs, we start mapping the pages and sections the site is going to have.",
-      "After that, we design a prototype using Figma to guide us through the process.",
+      "From there on we design a prototype using Figma to guide us through the process.",
     ],
     image: "/assets/images/Mapping.png",
   },
