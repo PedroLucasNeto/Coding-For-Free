@@ -15,7 +15,10 @@
 
   padding: 2rem;
 
-  background-color: rgba(color.$purple-900, 0.5);
+  background: url("/assets/images/contact_bg2.jpg");
+  background-size: cover;
+  background-blend-mode: overlay;
+  background-color: rgba(color.$black-900, 0.3);
 
   .form_container {
     display: flex;
@@ -206,7 +209,6 @@
           }
         }
       }
-
     }
   }
 }
