@@ -77,7 +77,7 @@ const Home = () => {
         </div>
       </section>
       <Process />
-      <Contributors />+
+      <Contributors />
       <Social />
     </div>
   );

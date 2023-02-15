@@ -1,5 +1,6 @@
 import { Process } from "../../types/Process";
 import "./ProcessCard.scss";
+import { FaCircle } from "react-icons/fa";
 
 interface ProcessCardProps {
   process: Process;
@@ -13,7 +14,7 @@ const ProcessCard = ({ process }: ProcessCardProps) => {
   const { title, topics } = process;
 
   return (
-    <div className="process_card">
+    <div className="process_card grow">
       <h2>{title}</h2>
       <ul>
         <li>{topics[0]}</li>
