@@ -24,17 +24,17 @@ function AboutUs() {
     },
   };
   return (
-    <section className="about_section">
-      {/* <div className="about_us_banner">
-        <h1>About Us</h1>
+    <section className="aboutUs_section">
+      {/* <div className="aboutUs_us_banner">
+        <h1>AboutUs Us</h1>
       </div> */}
       <motion.div
         initial="hidden"
         animate="visible"
         variants={container}
-        className="about_container"
+        className="aboutUs_container"
       >
-        <motion.div variants={item} className="about_card">
+        <motion.div variants={item} className="aboutUs_card">
           <h1>Coding For Free?</h1>
           <p>
             Coding For Free is a team effort to help people build their own
@@ -42,16 +42,16 @@ function AboutUs() {
             businesses to showcase their work online without breaking the bank.
           </p>
         </motion.div>
-        <motion.div variants={item} className="about_card">
+        <motion.div variants={item} className="aboutUs_card">
           <h1>The team!</h1>
           <p>
             Pedro Lucas and Harlon Garcia. Two university friends who faced the
             same problem: How to get experience without having the first
             opportunity. Join us in our mission to build meaningful, functional
-            websites that make a difference!"
+            websites that make a difference!
           </p>
         </motion.div>
-        <motion.div variants={item} className="about_card">
+        <motion.div variants={item} className="aboutUs_card">
           <h1>How it started</h1>
           <p>
             We wanted to do more then just portifolio - we wanted to experience
@@ -61,7 +61,7 @@ function AboutUs() {
             <mark>From sketch to release!</mark>
           </p>
         </motion.div>
-        <motion.div variants={item} className="about_card">
+        <motion.div variants={item} className="aboutUs_card">
           <h1>Why is it free?</h1>
           <p>
             We wanted to make our portfolio projects come to life, that goes
