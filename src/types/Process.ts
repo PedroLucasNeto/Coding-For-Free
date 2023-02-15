@@ -1,5 +1,5 @@
 export interface Process {
   title: string;
-  description: string;
+  topics: string[];
   image: string;
 }

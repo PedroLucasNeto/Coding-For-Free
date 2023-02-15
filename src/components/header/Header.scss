@@ -14,13 +14,12 @@
   align-items: center;
 
   padding: 1.5rem 2rem;
-  background-color: rgba(color.$purple-900, 0.9);
+  background-color: rgba(color.$purple-900, 0.3);
   backdrop-filter: blur(3px);
 
   > a > img {
     width: 3rem;
   }
-
 
   > h1 {
     color: color.$purple-50;
