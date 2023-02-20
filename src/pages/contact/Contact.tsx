@@ -45,7 +45,6 @@ const Contact = () => {
       );
     e.target.reset();
   };
-  // const form = useRef<HTMLFormElement | null>(null);
   return (
     <div className="main_container">
       <ToastContainer />

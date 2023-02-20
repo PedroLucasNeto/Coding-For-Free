@@ -10,12 +10,15 @@
   margin: 0 auto;
   padding: 2rem;
 
-  background-color: color.$black-700;
-  border-radius: 2rem;
+  border-radius: 1rem;
   overflow: hidden;
 
+  background-color: rgba(color.$black-600, 0.1);
+
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.6);
+
   &:hover {
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 1);
+    box-shadow: 0 5px 15px rgba(color.$purple-900, 0.2);
   }
 }
 
@@ -95,7 +98,7 @@
     }
 
     &:hover {
-      background-color: rgba(color.$black-900, 0.075);
+      background-color: rgba(color.$black-900, 0.3);
 
       h3 {
         color: color.$purple-200;

@@ -51,7 +51,7 @@ const Home = () => {
               <h2>About Project</h2>
               <p>
                 <mark>Coding For Free</mark>
-                is a way we found to acquire experience while we have not yet
+                is a way we've found to acquire experience when we haven't yet
                 been exposed to the market.
               </p>
             </motion.div>
