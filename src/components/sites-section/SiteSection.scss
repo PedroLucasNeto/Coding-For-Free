@@ -1,0 +1,17 @@
+@use "../../styles/colors" as color;
+@use "../../styles/breakpoints" as *;
+
+.site_section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+
+  gap: 2rem;
+
+  > h2 {
+    color: color.$purple-400;
+  }
+}

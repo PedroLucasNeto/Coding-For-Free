@@ -6,7 +6,7 @@ export const sites = [
       aboutUs: "/assets/images/forzam_detail/forzam_aboutUs.png",
       contact: "/assets/images/forzam_detail/forzam_contact.png",
       core: "/assets/images/forzam_detail/forzam_core.png",
-      pictures: "/assets/images/forzam_detail/forzam_images.png",
+      pictures: "/assets/images/forzam_detail/forzam_imagesGrid.png",
     },
   },
 ];

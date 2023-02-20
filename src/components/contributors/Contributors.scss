@@ -46,30 +46,12 @@
   }
 }
 
-.swiper-slide {
-  width: fit-content;
+.swiper-pagination > .swiper-pagination-bullet{
+  background-color: color.$purple-500;
 }
 
-.swiper-wrapper {
-  width: auto;
-}
-
-.swiper-horizontal > .swiper-pagination-bullets,
-.swiper-pagination-bullets.swiper-pagination-horizontal,
-.swiper-pagination-custom,
-.swiper-pagination-fraction {
-  bottom: -25px;
-}
-
-.swiper-pagination-bullet {
-  background: color.$purple-700;
-}
-
-.swiper-pagination-bullet-active {
-  background: color.$purple-400;
-}
-
-.swiper-button-prev::after,
-.swiper-button-next::after {
+.swiper-button-prev,
+.swiper-button-next {
   font-size: 1.5rem;
+  background-color: color.$purple-500;
 }

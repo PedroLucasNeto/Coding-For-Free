@@ -4,7 +4,7 @@ export interface Site {
     banner: string;
     aboutUs?: string;
     contact?: string;
-    services?: string;
+    core?: string;
     pictures?: string;
   };
 }

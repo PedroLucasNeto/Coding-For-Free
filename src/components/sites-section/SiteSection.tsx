@@ -1,7 +1,6 @@
-import "./Contributors.scss";
+import "./SiteSection.scss";
 
-import InfoCard from "../info-card/InfoCard";
-import { contributors } from "../../utils/contributors";
+import { sites } from "../../utils/sites";
 import { useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, EffectFade, Pagination } from "swiper";
@@ -10,12 +9,13 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/effect-fade";
 import "swiper/css/pagination";
+import SiteGrid from "../site-grid/SiteGrid";
 
-const Contributors = () => {
-  const sectionRef = useRef(null);
-  const isInView = useInView(sectionRef);
+const SiteSection = () => {
+  const siteRef = useRef(null);
+  const isInView = useInView(siteRef);
 
-  const animationSection = {
+  const animationSite = {
     hidden: { opacity: 0, scale: 0 },
     visible: {
       opacity: 1,
@@ -30,13 +30,13 @@ const Contributors = () => {
 
   return (
     <motion.section
-      ref={sectionRef}
-      variants={animationSection}
+      ref={siteRef}
+      variants={animationSite}
       initial="hidden"
       animate={isInView ? "visible" : "invisible"}
-      className="contributors"
+      className="site_section"
     >
-      <h2>Founders</h2>
+      <h2>Sites We Developed</h2>
       <Swiper
         modules={[Navigation, EffectFade, Pagination]}
         effect="slide"
@@ -47,9 +47,9 @@ const Contributors = () => {
         scrollbar={{ draggable: true }}
         className="swiper"
       >
-        {contributors.map((contributor, index) => (
-          <SwiperSlide key={index + contributor.name} className="swiper-slide">
-            <InfoCard contributor={contributor} />
+        {sites.map((site, index) => (
+          <SwiperSlide key={index + site.name} className="swiper-slide">
+            <SiteGrid site={site} />
           </SwiperSlide>
         ))}
       </Swiper>
@@ -57,4 +57,4 @@ const Contributors = () => {
   );
 };
 
-export default Contributors;
+export default SiteSection;
