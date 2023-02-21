@@ -1,5 +1,6 @@
 export interface Site {
   name: string;
+  description: string;
   images: {
     banner: string;
     aboutUs?: string;

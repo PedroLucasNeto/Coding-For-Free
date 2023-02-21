@@ -1,0 +1,63 @@
+@use '../../styles/breakpoints.scss' as *;
+@use '../../styles/colors.scss' as color;
+
+
+
+.site_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  gap: 3rem;
+
+  padding: 2rem;
+
+  border-radius: 0.3rem;
+
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.9);
+
+  background-color: rgba(color.$black-900, 0.9);
+  background-blend-mode: color-dodge;
+  background-size: 200%;
+  background-repeat: no-repeat;
+
+  min-width: 10rem;
+  max-width: 100%;
+  min-height: 20rem;
+
+  align-items: flex-start;
+
+  .lists{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+
+    > li {
+      color: color.$purple-400;
+    }
+
+    > li > a {
+      font-size: 1.5rem;
+      color: color.$purple-50;
+    }
+  }
+}
+
+.site_info {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+
+  justify-content: center;
+  text-align: left;
+
+  > h3 {
+    color: color.$purple-400;
+  }
+
+  > p {
+    color: color.$purple-50;
+  }
+}
+

@@ -9,7 +9,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/effect-fade";
 import "swiper/css/pagination";
-import SiteGrid from "../site-grid/SiteGrid";
+import SitesDeveloped from "../sites-developed/SitesDeveloped";
 
 const SiteSection = () => {
   const siteRef = useRef(null);
@@ -37,22 +37,9 @@ const SiteSection = () => {
       className="site_section"
     >
       <h2>Sites We Developed</h2>
-      <Swiper
-        modules={[Navigation, EffectFade, Pagination]}
-        effect="slide"
-        speed={800}
-        slidesPerView={"auto"}
-        spaceBetween={40}
-        pagination={{ clickable: true }}
-        scrollbar={{ draggable: true }}
-        className="swiper"
-      >
-        {sites.map((site, index) => (
-          <SwiperSlide key={index + site.name} className="swiper-slide">
-            <SiteGrid site={site} />
-          </SwiperSlide>
-        ))}
-      </Swiper>
+      {sites.map((site, index) => (
+        <SitesDeveloped key={index} site={site} />
+      ))}
     </motion.section>
   );
 };
