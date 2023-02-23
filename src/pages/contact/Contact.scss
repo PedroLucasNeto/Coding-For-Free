@@ -17,7 +17,7 @@
   background: url("/assets/images/contact_bg2.jpg");
   background-size: cover;
   background-blend-mode: overlay;
-  background-color: rgba(color.$black-900, 0.8);
+  background-color: rgba(color.$black-900, 0.4);
 
   .form_container {
     display: flex;
@@ -27,7 +27,6 @@
 
     padding: 2rem;
 
-    background-color: rgba(color.$black-900, 0.3);
     border-radius: 0.3rem;
 
     > h2 {
@@ -61,7 +60,7 @@
       border-radius: 0.1rem;
 
       color: color.$black-900;
-      background-color: rgba(color.$purple-50, 0.9);
+      background-color: color.$purple-50
     }
 
     > textarea {
@@ -107,7 +106,7 @@
     width: 100%;
     height: fit-content;
 
-    background-color: rgba(color.$black-900, 0.3);
+    background-color: rgba(color.$black-900, 0.5);
 
     padding: 1rem;
 

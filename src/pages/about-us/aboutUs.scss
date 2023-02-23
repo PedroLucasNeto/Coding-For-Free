@@ -13,7 +13,7 @@
   background: url("/assets/images/contact_bg2.jpg");
   background-size: cover;
   background-blend-mode: overlay;
-  background-color: rgba(color.$black-900, 0.8);
+  background-color: rgba(color.$black-900, 0.4);
 
   @include sm {
     margin-top: 0rem;
