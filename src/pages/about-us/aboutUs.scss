@@ -8,10 +8,16 @@
   align-items: center;
   width: 100%;
 
+  margin-top: 5.7rem;
+
   background: url("/assets/images/contact_bg2.jpg");
   background-size: cover;
   background-blend-mode: overlay;
-  background-color: rgba(color.$black-900, 0.3);
+  background-color: rgba(color.$black-900, 0.8);
+
+  @include sm {
+    margin-top: 0rem;
+  }
 }
 
 .aboutUs_container {
@@ -30,13 +36,11 @@
 
   background-color: rgba(color.$black-900, 0.3);
 
-  padding: 1rem;
+  padding: 1.3rem;
 
-  max-width: 300px;
+  max-width: 22rem;
 
-  height: 300px;
-
-
+  height: 22rem;
 
   > h1 {
     color: color.$purple-50;
@@ -59,8 +63,9 @@
     justify-content: center;
     flex-wrap: wrap;
 
-    margin-top: 5rem;
-    gap: 0.5rem;
+    margin-top: 5.7rem;
+
+    gap: 0.3rem;
 
     max-width: 56.025rem;
     .about_card {
