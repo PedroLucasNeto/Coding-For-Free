@@ -77,8 +77,8 @@ const Home = () => {
           </motion.div>
         </div>
       </section>
-      <SiteSection />
       <Process />
+      <SiteSection />
       <Contributors />
       <Social />
     </div>

@@ -31,7 +31,10 @@ const SiteGrid = ({ site }: SiteGridProps) => {
       </ul>
       <ul className="lists">
         <li>
-          <a href="">
+          <a
+            href="https://github.com/PedroLucasNeto/Forzam-Detail"
+            target={"_blank"}
+          >
             <TbBrandGithub />
           </a>
         </li>

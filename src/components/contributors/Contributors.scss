@@ -5,11 +5,10 @@
   text-align: center;
   flex-direction: column;
 
-  max-width: 22rem;
+  width: 100%;
+
   padding: 2rem;
   margin: 0 auto;
-
-  overflow: hidden;
 
   > h2 {
     font-size: 2rem;
@@ -18,31 +17,7 @@
   }
 
   @include sm {
-    margin: 0 auto;
-    max-width: 48rem;
-    overflow: hidden;
-  }
-
-  @include xl {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     width: 100%;
-
-    overflow: visible;
-  }
-}
-
-.swiper {
-  overflow: visible;
-  max-width: 38rem;
-
-  @include sm {
-    max-width: 80%;
-  }
-
-  @include xl {
-    max-width: 1400px;
   }
 }
 
@@ -55,3 +30,15 @@
   font-size: 1.5rem;
   background-color: color.$purple-500;
 }
+
+.swiper {
+  max-width: 48rem;
+}
+.swiper-slide {
+  text-align: center;
+
+  padding: 1rem;
+
+  max-width: fit-content;
+}
+

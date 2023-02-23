@@ -2,8 +2,6 @@ import "./SiteSection.scss";
 
 import { sites } from "../../utils/sites";
 import { useRef } from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, EffectFade, Pagination } from "swiper";
 import { motion, useInView } from "framer-motion";
 import "swiper/css";
 import "swiper/css/navigation";

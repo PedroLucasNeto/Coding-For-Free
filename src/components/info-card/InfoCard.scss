@@ -6,6 +6,7 @@
   flex-direction: column;
 
   width: 18rem;
+  height: 20rem;
 
   margin: 0 auto;
   padding: 2rem;
@@ -19,7 +20,7 @@
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.6);
 
   &:hover {
-    box-shadow: 0 5px 15px rgba(color.$purple-900, 0.2);
+    box-shadow: 0 5px 15px rgba(color.$purple-900, .9);
   }
 }
 

@@ -45,10 +45,10 @@ const Contributors = () => {
         spaceBetween={40}
         pagination={{ clickable: true }}
         scrollbar={{ draggable: true }}
-        className="swiper"
+        className="swiper_container"
       >
         {contributors.map((contributor, index) => (
-          <SwiperSlide key={index + contributor.name} className="swiper-slide">
+          <SwiperSlide key={index + contributor.name}>
             <InfoCard contributor={contributor} />
           </SwiperSlide>
         ))}

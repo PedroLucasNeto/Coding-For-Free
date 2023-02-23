@@ -1,29 +1,28 @@
 @use '../../styles/breakpoints.scss' as *;
 @use '../../styles/colors.scss' as color;
 
-
-
 .site_container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 
-  gap: 3rem;
+  gap: 2rem;
 
   padding: 2rem;
 
   border-radius: 0.3rem;
 
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.9);
+  box-shadow: 0 5px 15px color.$black-900;
 
   background-color: rgba(color.$black-900, 0.9);
   background-blend-mode: color-dodge;
   background-size: 200%;
+  background-position: 0% 50%;
   background-repeat: no-repeat;
 
-  min-width: 10rem;
-  max-width: 100%;
+  min-width: 13rem;
+  max-width: 20rem;
   min-height: 20rem;
 
   align-items: flex-start;
@@ -39,7 +38,11 @@
 
     > li > a {
       font-size: 1.5rem;
-      color: color.$purple-50;
+      color: color.$purple-100;
+
+      &:hover {
+        color: color.$purple-400;
+      }
     }
   }
 }
@@ -57,7 +60,26 @@
   }
 
   > p {
-    color: color.$purple-50;
+    line-height: 1.3rem;
+    color: color.$purple-100;
   }
 }
 
+@include sm {
+  .site_container {
+    max-width: 24rem;
+  }
+}
+
+@include md {
+  .site_container {
+    max-width: 47rem;
+  }
+}
+
+@include lg {
+  .site_container {
+    background-size: contain;
+    background-position: 50% 100%;
+  }
+}
