@@ -6,7 +6,7 @@ const social_links = [
   {
     icon: <SiDiscord />,
     title: "Discord",
-    url: "https://discord.gg/7vCgtjdanC",
+    url: "https://discord.gg/PW4MYGfxY8",
   },
   {
     icon: <SiGithub />,
