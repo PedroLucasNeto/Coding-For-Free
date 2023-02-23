@@ -9,10 +9,12 @@
   height: 20rem;
 
   margin: 0 auto;
-  padding: 2rem;
   margin-bottom: 0.3rem;
 
-  border-radius: 1rem;
+  padding: 2rem;
+
+  border-radius: 0.3rem;
+
   overflow: hidden;
 
   background-color: rgba(color.$black-600, 0.1);
@@ -20,7 +22,7 @@
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.6);
 
   &:hover {
-    box-shadow: 0 5px 15px rgba(color.$purple-900, .9);
+    box-shadow: 0 5px 15px rgba(color.$purple-900, 1);
   }
 }
 

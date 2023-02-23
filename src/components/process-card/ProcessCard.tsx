@@ -1,6 +1,5 @@
 import { Process } from "../../types/Process";
 import "./ProcessCard.scss";
-import { FaCircle } from "react-icons/fa";
 
 interface ProcessCardProps {
   process: Process;
