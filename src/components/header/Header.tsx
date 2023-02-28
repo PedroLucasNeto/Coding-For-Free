@@ -2,17 +2,12 @@ import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import Navbar from "../navbar/Navbar";
 import ToggleButton from "../shared/toggle-button/ToggleButton";
+import TranslationButton from "../shared/translation-button/TranslationButton";
 import "./Header.scss";
 import "/node_modules/flag-icons/css/flag-icons.min.css";
 
 const Header = () => {
   const [isActive, setIsActive] = useState(false);
-  const [isTranslated, setIsTranslated] = useState(false);
-
-  const handleTranslation = () => {
-    setIsTranslated(!isTranslated);
-    console.log(isTranslated);
-  };
 
   return (
     <>
@@ -34,11 +29,8 @@ const Header = () => {
             <NavLink to="/about">About Us</NavLink>
           </li>
         </ul>
-        <button
-          className={isTranslated ? "enUS" : "ptBR"}
-          onClick={handleTranslation}
-        ></button>
         <ToggleButton isActive={isActive} onToggle={setIsActive} />
+        <TranslationButton />
       </div>
       <Navbar isOpened={isActive} handleClick={setIsActive} />
     </>

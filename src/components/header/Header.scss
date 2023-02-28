@@ -25,22 +25,6 @@
     font-size: 1.5rem;
   }
 
-   > button {
-    width: 20px;
-    height: 15px;
-  }
-
-  .ptBR {
-    background-image: url('public/assets/images/br.svg');
-    background-size: contain;
-  }
-
-  .enUS {
-    background-image: url('public/assets/images/us.svg');
-    background-size: cover;
-
-  }
-
   @include sm {
     position: relative;
   }
