@@ -21,6 +21,12 @@
   }
 }
 
+.swiper-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .swiper-pagination > .swiper-pagination-bullet{
   background-color: color.$purple-500;
 }
@@ -32,7 +38,9 @@
 }
 
 .swiper {
+
   max-width: 48rem;
+
 }
 .swiper-slide {
   text-align: center;

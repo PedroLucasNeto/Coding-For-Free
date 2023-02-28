@@ -34,7 +34,7 @@ const SiteSection = () => {
       animate={isInView ? "visible" : "invisible"}
       className="site_section"
     >
-      <h2>Sites We Developed</h2>
+      <h2>Sites we've done!</h2>
       {sites.map((site, index) => (
         <SitesDeveloped key={index} site={site} />
       ))}
