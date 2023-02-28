@@ -7,7 +7,6 @@ export const processes = [
     ],
     image: "/assets/images/Selection.png",
   },
-
   {
     title: "Goal identification",
     topics: [
@@ -25,7 +24,6 @@ export const processes = [
     ],
     image: "/assets/images/Mapping.png",
   },
-
   {
     title: "Creation",
     topics: [

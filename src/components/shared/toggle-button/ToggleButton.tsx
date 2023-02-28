@@ -8,6 +8,7 @@ interface ToggleButtonProps {
 const ToggleButton = ({ isActive, onToggle }: ToggleButtonProps) => {
   return (
     <span
+      id="toggleButton"
       className={isActive ? "toggle_button toggle_active" : "toggle_button"}
       onClick={() => onToggle(!isActive)}
     >
