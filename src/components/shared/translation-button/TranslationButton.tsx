@@ -10,7 +10,9 @@ const TranslationButton = () => {
   };
   return (
     <button
-      className={isTranslated ? "enUS" : "ptBR"}
+      className={
+        isTranslated ? "translation_button enUS" : "translation_button ptBR"
+      }
       onClick={handleTranslation}
     ></button>
   );
