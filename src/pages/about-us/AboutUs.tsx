@@ -1,8 +1,11 @@
 import "./AboutUs.scss";
 import Social from "../../components/social/Social";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 function AboutUs() {
+  const { t } = useTranslation();
+
   const container = {
     hidden: { opacity: 0, scale: 0 },
     visible: {
@@ -35,42 +38,23 @@ function AboutUs() {
         className="aboutUs_container"
       >
         <motion.div variants={item} className="aboutUs_card">
-          <h1>Coding For Free?</h1>
+          <h1>{t("about-us-page-card1-title1")}</h1>
+          <p>{t("about-us-page-card1-description")}</p>
+        </motion.div>
+        <motion.div variants={item} className="aboutUs_card">
+          <h1>{t("about-us-page-card1-title2")}</h1>
+          <p>{t("about-us-page-card2-description")}</p>
+        </motion.div>
+        <motion.div variants={item} className="aboutUs_card">
+          <h1>{t("about-us-page-card1-title3")}</h1>
           <p>
-            Coding For Free is a team effort to help people build their own
-            websites for free! Our goal is to empower individuals and small
-            businesses to showcase their work online without breaking the bank.
+            {t("about-us-page-card3-description")}
+            <mark>{t("")}</mark>
           </p>
         </motion.div>
         <motion.div variants={item} className="aboutUs_card">
-          <h1>The team!</h1>
-          <p>
-            Pedro Lucas and Harlon Garcia. Two university friends who faced the
-            same problem: How to get experience without having the first
-            opportunity. Join us in our mission to build meaningful, functional
-            websites that make a difference!
-          </p>
-        </motion.div>
-        <motion.div variants={item} className="aboutUs_card">
-          <h1>How it started</h1>
-          <p>
-            We wanted to do more then just portifolio - we wanted to experience
-            the full cycle of software development and give back to the
-            community. We design and develop real websites for individuals and
-            small businesses.
-            <mark>From sketch to release!</mark>
-          </p>
-        </motion.div>
-        <motion.div variants={item} className="aboutUs_card">
-          <h1>Why is it free?</h1>
-          <p>
-            We wanted to make our portfolio projects come to life, that goes
-            beyond just showcasing our skills. Unlike many developers who only
-            create portfolio pieces, we aim to launch real websites that people
-            can actually use. With this, we're not just demonstrating our
-            abilities - we're helping our community and gaining valuable
-            experience.
-          </p>
+          <h1>{t("about-us-page-card1-title4")}</h1>
+          <p>{t("about-us-page-card4-description")}</p>
         </motion.div>
       </motion.div>
       <Social />

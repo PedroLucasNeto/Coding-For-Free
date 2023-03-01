@@ -59,18 +59,16 @@ const Home = () => {
             </motion.div>
             <motion.div variants={item}>
               <h2>{t("home-section-title2")}</h2>
-              <p>
-                {t(
-                  "Our goal was to help the people next to us to establish a strong online presence by creating simple but powerfull landing pages and with that grow as professionals."
-                )}
-              </p>
+              <p>{t("home-section-description2")}</p>
             </motion.div>
             <motion.div variants={item}>
               <h2>{t("home-section-title3")}</h2>
               <p>
                 {t("home-section-description3")}
                 <button>
-                  <Link to={"/about"}>{t("click here!")}</Link>
+                  <Link to={"/about"}>
+                    {t("home-section-button-click-here")}
+                  </Link>
                 </button>
               </p>
             </motion.div>
