@@ -28,12 +28,14 @@ const Header = () => {
           <li>
             <NavLink to="/about">About Us</NavLink>
           </li>
+          <li>
+            <TranslationButton
+              isTranslated={isTranslated}
+              handleTranslation={setIsTranslated}
+            />
+          </li>
         </ul>
         <ToggleButton isActive={isActive} onToggle={setIsActive} />
-        <TranslationButton
-          isTranslated={isTranslated}
-          handleTranslation={setIsTranslated}
-        />
       </div>
       <Navbar isOpened={isActive} handleClick={setIsActive} />
     </>

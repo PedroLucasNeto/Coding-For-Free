@@ -3,7 +3,6 @@
 
 .navbar {
   position: fixed;
-  top: -1.3rem;
   left: 0;
 
   z-index: 1;
@@ -18,13 +17,12 @@
   width: 100%;
 
   padding: 1.5rem;
-  margin-top: 6.3rem;
 
   border-bottom: 2px solid rgba(color.$purple-900, 0.9);
   background-color: rgba(color.$black-800, 0.9);
   backdrop-filter: blur(4px);
 
-  transform: translateY(-16rem);
+  transform: translateY(-20rem);
   transition: all 0.3s ease-in-out;
 
   > li {

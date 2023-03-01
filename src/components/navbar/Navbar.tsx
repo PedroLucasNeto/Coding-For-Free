@@ -1,11 +1,14 @@
 import "./Navbar.scss";
 import { NavLink } from "react-router-dom";
+import TranslationButton from "../shared/translation-button/TranslationButton";
+import { useState } from "react";
 
 interface NavbarProps {
   isOpened: boolean;
   handleClick: (isOpened: boolean) => void;
 }
 const Navbar = ({ isOpened, handleClick }: NavbarProps) => {
+  const [isTranslated, setIsTranslated] = useState(false);
   return (
     <ul className={`navbar ${isOpened ? "opened" : ""}`}>
       <li>
@@ -22,6 +25,12 @@ const Navbar = ({ isOpened, handleClick }: NavbarProps) => {
         <NavLink to="/about" onClick={() => handleClick(!isOpened)}>
           About Us
         </NavLink>
+      </li>
+      <li>
+        <TranslationButton
+          isTranslated={isTranslated}
+          handleTranslation={setIsTranslated}
+        />
       </li>
     </ul>
   );
