@@ -1,18 +1,21 @@
 import { useState } from "react";
 import "./TranslationButton.scss";
 
-const TranslationButton = () => {
-  const [isTranslated, setIsTranslated] = useState(false);
+interface TranslationButtonProps {
+  isTranslated: boolean;
+  handleTranslation: (isTranslated: boolean) => void;
+}
 
-  const handleTranslation = () => {
-    setIsTranslated(!isTranslated);
-  };
+const TranslationButton = ({
+  isTranslated,
+  handleTranslation,
+}: TranslationButtonProps) => {
   return (
     <button
       className={
         isTranslated ? "translation_button enUS" : "translation_button ptBR"
       }
-      onClick={handleTranslation}
+      onClick={() => handleTranslation(!isTranslated)}
     ></button>
   );
 };

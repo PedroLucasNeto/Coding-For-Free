@@ -8,6 +8,7 @@ import "/node_modules/flag-icons/css/flag-icons.min.css";
 
 const Header = () => {
   const [isActive, setIsActive] = useState(false);
+  const [isTranslated, setIsTranslated] = useState(false);
 
   return (
     <>
@@ -15,7 +16,6 @@ const Header = () => {
         <NavLink to="/" end>
           <img src="/assets/images/CFF-ICON-WHITE.png" alt="" />
         </NavLink>
-
         <ul className="header_nav">
           <li>
             <NavLink to="/" end>
@@ -30,7 +30,10 @@ const Header = () => {
           </li>
         </ul>
         <ToggleButton isActive={isActive} onToggle={setIsActive} />
-        <TranslationButton />
+        <TranslationButton
+          isTranslated={isTranslated}
+          handleTranslation={setIsTranslated}
+        />
       </div>
       <Navbar isOpened={isActive} handleClick={setIsActive} />
     </>

@@ -5,7 +5,6 @@ interface NavbarProps {
   isOpened: boolean;
   handleClick: (isOpened: boolean) => void;
 }
-
 const Navbar = ({ isOpened, handleClick }: NavbarProps) => {
   return (
     <ul className={`navbar ${isOpened ? "opened" : ""}`}>
