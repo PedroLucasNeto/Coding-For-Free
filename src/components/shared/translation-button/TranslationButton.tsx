@@ -6,7 +6,6 @@ const TranslationButton = () => {
 
   const handleTranslation = () => {
     setIsTranslated(!isTranslated);
-    console.log(isTranslated);
   };
   return (
     <button
