@@ -1,6 +1,7 @@
 import "./Social.scss";
 import { SiDiscord, SiGithub } from "react-icons/si";
 import { RiWhatsappFill, RiLinkedinFill } from "react-icons/ri";
+import { useTranslation } from "react-i18next";
 
 const social_links = [
   {
@@ -13,14 +14,15 @@ const social_links = [
     title: "Github",
     url: "https://github.com/PedroLucasNeto/Coding-For-Free",
   },
-  // { icon: <RiLinkedinFill />, title: "Linkedin", url: "" },
 ];
 
 const Social = () => {
+  const { t } = useTranslation();
   return (
     <section className="social">
       <h2>
-        Follow us on <mark>social media</mark>
+        {t("social-media-section-text")}{" "}
+        <mark>{t("social-media-section-mark")}</mark>
       </h2>
       <div className="social_icons">
         {social_links.map(({ icon, title, url }, index) => (

@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 import { NavLink } from "react-router-dom";
 import Navbar from "../navbar/Navbar";
 import ToggleButton from "../shared/toggle-button/ToggleButton";
@@ -9,6 +10,7 @@ import "/node_modules/flag-icons/css/flag-icons.min.css";
 const Header = () => {
   const [isActive, setIsActive] = useState(false);
   const [isTranslated, setIsTranslated] = useState(false);
+  const { t } = useTranslation();
 
   return (
     <>
@@ -19,14 +21,14 @@ const Header = () => {
         <ul className="header_nav">
           <li>
             <NavLink to="/" end>
-              Home
+              {t("header-item1")}
             </NavLink>
           </li>
           <li>
-            <NavLink to="/contact">Contact</NavLink>
+            <NavLink to="/contact">{t("header-item2")}</NavLink>
           </li>
           <li>
-            <NavLink to="/about">About Us</NavLink>
+            <NavLink to="/about">{t("header-item3")}</NavLink>
           </li>
           <li>
             <TranslationButton

@@ -13,7 +13,6 @@ export const contributors = [
     name: "Harlon Garcia",
     role: "Co-founder",
     picture: "/assets/images/contributors_pictures/harlon_garcia.jpeg",
-
     contactLinks: {
       linkedin: "https://www.linkedin.com/in/harlongarcia/",
       github: "https://github.com/HarlonGarcia",

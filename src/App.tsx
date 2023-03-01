@@ -3,6 +3,7 @@ import Header from "./components/header/Header";
 import Home from "./pages/home/Home";
 import AboutUs from "./pages/about-us/AboutUs";
 import Contact from "./pages/contact/Contact";
+
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {

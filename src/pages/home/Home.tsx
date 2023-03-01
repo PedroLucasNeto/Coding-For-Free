@@ -9,6 +9,7 @@ import Social from "../../components/social/Social";
 import Contributors from "../../components/contributors/Contributors";
 import Process from "../../components/process/Process";
 import SiteSection from "../../components/sites-section/SiteSection";
+import { useTranslation } from "react-i18next";
 
 const container = {
   hidden: { opacity: 0, scale: 1 },
@@ -30,12 +31,13 @@ const item = {
 const Home = () => {
   const aboutRef = useRef(null);
   const isInView = useInView(aboutRef);
+  const { t } = useTranslation();
 
   return (
     <div className="home_container">
       <section className="home_header">
-        <h1>Coding For Free</h1>
-        <strong>Elevating online presence</strong>
+        <h1>{t("banner-title")}</h1>
+        <strong>{t("banner-slogan")}</strong>
         <TbArrowBigDown className="see_more" />
       </section>
       <section className="home_project">
@@ -49,28 +51,26 @@ const Home = () => {
             animate={isInView ? "visible" : "invisible"}
           >
             <motion.div variants={item}>
-              <h2>About Project</h2>
+              <h2>{t("home-section-title1")}</h2>
               <p>
-                <mark>Coding For Free</mark>
-                is a way we've found to acquire experience when we haven't yet
-                been exposed to the market.
+                <mark>{t("home-section-mark")}</mark>
+                {t("home-section-description1")}
               </p>
             </motion.div>
             <motion.div variants={item}>
-              <h2>Task</h2>
+              <h2>{t("home-section-title2")}</h2>
               <p>
-                Our goal was to help the people next to us to establish a strong
-                online presence by creating simple but powerfull landing pages
-                and with that grow as professionals.
+                {t(
+                  "Our goal was to help the people next to us to establish a strong online presence by creating simple but powerfull landing pages and with that grow as professionals."
+                )}
               </p>
             </motion.div>
             <motion.div variants={item}>
-              <h2>See more!</h2>
+              <h2>{t("home-section-title3")}</h2>
               <p>
-                If you liked this idea and want to know a litle bit more about
-                us
+                {t("home-section-description3")}
                 <button>
-                  <Link to={"/about"}> click here!</Link>
+                  <Link to={"/about"}>{t("click here!")}</Link>
                 </button>
               </p>
             </motion.div>

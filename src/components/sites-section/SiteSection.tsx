@@ -8,6 +8,7 @@ import "swiper/css/navigation";
 import "swiper/css/effect-fade";
 import "swiper/css/pagination";
 import SitesDeveloped from "../sites-developed/SitesDeveloped";
+import { useTranslation } from "react-i18next";
 
 const SiteSection = () => {
   const siteRef = useRef(null);
@@ -26,6 +27,8 @@ const SiteSection = () => {
     },
   };
 
+  const { t } = useTranslation();
+
   return (
     <motion.section
       ref={siteRef}
@@ -34,10 +37,14 @@ const SiteSection = () => {
       animate={isInView ? "visible" : "invisible"}
       className="site_section"
     >
-      <h2>Sites we've done!</h2>
-      {sites.map((site, index) => (
-        <SitesDeveloped key={index} site={site} />
-      ))}
+      <h2>{t("sites-section-title")}</h2>
+      {sites.map((site, index) => {
+        const description = t(`sites-section-description${index + 1}`);
+
+        const object = { name: site.name, image: site.image, description };
+
+        return <SitesDeveloped key={index} site={object} />;
+      })}
     </motion.section>
   );
 };

@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 import { Process } from "../../types/Process";
 import "./ProcessCard.scss";
 

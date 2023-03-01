@@ -12,6 +12,7 @@ const Navbar = ({ isOpened, handleClick }: NavbarProps) => {
   return (
     <ul className={`navbar ${isOpened ? "opened" : ""}`}>
       <li>
+        <link rel="stylesheet" href="" />
         <NavLink to="/" onClick={() => handleClick(!isOpened)}>
           Home
         </NavLink>

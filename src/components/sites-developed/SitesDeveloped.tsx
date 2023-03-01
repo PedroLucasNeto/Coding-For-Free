@@ -10,12 +10,12 @@ const SiteGrid = ({ site }: SiteGridProps) => {
     return null;
   }
 
-  const { name, description, images } = site;
+  const { name, description, image } = site;
   return (
     <div
       className="site_container"
       style={{
-        backgroundImage: `url(${images.banner})`,
+        backgroundImage: `url(${image})`,
       }}
     >
       <div className="site_info">

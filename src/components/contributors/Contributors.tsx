@@ -1,5 +1,5 @@
 import "./Contributors.scss";
-
+import { useTranslation } from "react-i18next";
 import InfoCard from "../info-card/InfoCard";
 import { contributors } from "../../utils/contributors";
 import { useRef } from "react";
@@ -14,6 +14,7 @@ import "swiper/css/pagination";
 const Contributors = () => {
   const sectionRef = useRef(null);
   const isInView = useInView(sectionRef);
+  const { t } = useTranslation();
 
   const animationSection = {
     hidden: { opacity: 0, scale: 0 },
@@ -27,7 +28,6 @@ const Contributors = () => {
       },
     },
   };
-
   return (
     <motion.section
       ref={sectionRef}
@@ -36,7 +36,7 @@ const Contributors = () => {
       animate={isInView ? "visible" : "invisible"}
       className="contributors"
     >
-      <h2>Founders</h2>
+      <h2>{t("contributors-section-title")} </h2>
       <Swiper
         modules={[Navigation, EffectFade, Pagination]}
         effect="slide"
@@ -47,11 +47,23 @@ const Contributors = () => {
         scrollbar={{ draggable: true }}
         className="swiper_container"
       >
-        {contributors.map((contributor, index) => (
-          <SwiperSlide key={index + contributor.name}>
-            <InfoCard contributor={contributor} />
-          </SwiperSlide>
-        ))}
+        {contributors.map((contributor, index) => {
+          const contributorTitle = t(
+            `contributors-section-card${index + 1}-founder`
+          );
+          const object = {
+            name: contributor.name,
+            role: contributorTitle,
+            picture: contributor.picture,
+            contactLinks: contributor.contactLinks,
+          };
+
+          return (
+            <SwiperSlide key={index + contributor.name}>
+              <InfoCard contributor={object} />
+            </SwiperSlide>
+          );
+        })}
       </Swiper>
     </motion.section>
   );
