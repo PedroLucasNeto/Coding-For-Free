@@ -39,9 +39,9 @@ const SiteSection = () => {
     >
       <h2>{t("sites-section-title")}</h2>
       {sites.map((site, index) => {
-        const description = t(`sites-section-description${index + 1}`);
-
-        const object = { name: site.name, image: site.image, description };
+        const name = t("sites-section-name");
+        const description = t("sites-section-description");
+        const object = { name: name, image: site.image, description };
 
         return <SitesDeveloped key={index} site={object} />;
       })}

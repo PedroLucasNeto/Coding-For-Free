@@ -33,6 +33,7 @@
     "process-section-card6-description1":"Once everything's working beautifully, it's time to deploy our website.",
     "process-section-card6-description2":"After that, our handiwork is complete, and the client now has their own online presence!",
     "sites-section-title":"Sites we've done!",
+    "sites-section-name":"Forzam Detail",
     "sites-section-description":"This website was developed for a vehicle detailing studio. It's a dark theme, and very objective landpage so people can see know a bit more their work and contact them.",
     "contributors-section-title":"Founders",
     "contributors-section-card1-founder":"Founder",
@@ -49,13 +50,14 @@
     "contact-page-title2":"More info",
     "contact-page-info1":"Address",
     "contact-page-info2":"Web Site",
-    "about-us-page-card1-title1":"Coding For Free?",
+    "about-us-page-card1-title":"Coding For Free?",
     "about-us-page-card1-description":"Coding For Free is a team effort to help people build their own websites for free! Our goal is to empower individuals and small businesses to showcase their work online without breaking the bank.",
-    "about-us-page-card1-title2":"The team!",
+    "about-us-page-card2-title":"The team!",
     "about-us-page-card2-description":"Pedro Lucas and Harlon Garcia. Two university friends who faced the same problem: How to get experience without having the first opportunity. Join us in our mission to build meaningful, functional websites that make a difference!",
-    "about-us-page-card1-title3":"How it started",
-    "about-us-page-card3-description":"We wanted to do more then just portifolio - we wanted to experience the full cycle of software development and give back to the community. We design and develop real websites for individuals and small businesses.From sketch to release!",
-    "about-us-page-card1-title4":"Why is it free?",
+    "about-us-page-card3-title":"How it started",
+    "about-us-page-card3-description":"We wanted to do more then just portifolio - we wanted to experience the full cycle of software development and give back to the community. We design and develop real websites for individuals and small businesses.",
+    "about-us-page-card3-mark":"From sketch to release!",
+    "about-us-page-card4-title":"Why is it free?",
     "about-us-page-card4-description":"We wanted to make our portfolio projects come to life, that goes beyond just showcasing our skills. Unlike many developers who only create portfolio pieces, we aim to launch real websites that people can actually use. With this, we're not just demonstrating our abilities - we're helping our community and gaining valuable experience."
   }
 }

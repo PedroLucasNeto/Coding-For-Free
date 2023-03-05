@@ -33,7 +33,8 @@
     "process-section-card6-description1":"Assim que tudo estiver funcionando perfeitamente, é hora de implantar nosso site.",
     "process-section-card6-description2":"Depois disso, nosso trabalho está completo e o cliente agora tem sua própria presença online!",
     "sites-section-title":"Sites que já criamos!",
-    "sites-section-description1":"Este site foi desenvolvido para um estúdio de detalhamento automotivo. É uma landing page com tema escuro e bem objetivo. O intuito do site é fazer com que as pessoas conheçam um pouco melhor o trabalho deles.  ",
+    "sites-section-name":"Forzam Detail",
+    "sites-section-description":"Este site foi desenvolvido para um estúdio de detalhamento automotivo. É uma landing page com tema escuro e bem objetivo. O intuito do site é fazer com que as pessoas conheçam um pouco melhor o trabalho deles.  ",
     "contributors-section-title":"Fundadores do Projeto",
     "contributors-section-card1-founder":"Fundador",
     "contributors-section-card2-founder":"Co-Fundador",
@@ -49,14 +50,14 @@
     "contact-page-title2":"Mais Informações",
     "contact-page-info1":"Endereço",
     "contact-page-info2":"Site",
-    "about-us-page-card1-title1":"Coding For Free?",
+    "about-us-page-card1-title":"Coding For Free?",
     "about-us-page-card1-description":"Coding For Free é um esforço em equipe para ajudar pessoas a construírem seus próprios sites gratuitamente! Nosso objetivo é ajudar amigos, família e pequenas empresas a exibirem seu trabalho online com a facilidade de não ter que pagar por isso.",
-    "about-us-page-card1-title2":"Nossa Equipe!",
+    "about-us-page-card2-title":"Nossa Equipe!",
     "about-us-page-card2-description":"Pedro Lucas e Harlon Garcia. Dois amigos da universidade que enfrentavam o mesmo problema: como obter experiência sem ter a primeira oportunidade. Você também pode se juntar a nós em nossa missão de construir sites significativos e funcionais que façam a diferença!",
-    "about-us-page-card1-title3":"Como começou?",
+    "about-us-page-card3-title":"Como começou?",
     "about-us-page-card3-description":"Nós precisavamos fazer mais do que apenas criar um portfólio - queríamos experimentar o ciclo completo de desenvolvimento de software e também ajudar à comunidade a nosso redor. Projetamos e desenvolvemos sites reais para indivíduos e pequenas empresas e com isso aprimoramos nossas habilidades",
     "about-us-page-card3-mark":"Do esboço ao lançamento!",
-    "about-us-page-card1-title4":"Por que de graça?",
+    "about-us-page-card4-title":"Por que de graça?",
     "about-us-page-card4-description":"Queríamos dar vida aos nossos projetos de portfólio, que vão além de apenas exibir nossas habilidades. Ao contrário de muitos desenvolvedores que criam apenas peças de portfólio, nosso objetivo é lançar sites reais que as pessoas possam realmente usar. Com isso, não estamos apenas demonstrando nossas habilidades - estamos ajudando nossa comunidade e adquirindo experiência valiosa."
   }
 }

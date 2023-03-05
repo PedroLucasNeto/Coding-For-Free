@@ -38,22 +38,22 @@ function AboutUs() {
         className="aboutUs_container"
       >
         <motion.div variants={item} className="aboutUs_card">
-          <h1>{t("about-us-page-card1-title1")}</h1>
+          <h1>{t("about-us-page-card1-title")}</h1>
           <p>{t("about-us-page-card1-description")}</p>
         </motion.div>
         <motion.div variants={item} className="aboutUs_card">
-          <h1>{t("about-us-page-card1-title2")}</h1>
+          <h1>{t("about-us-page-card2-title")}</h1>
           <p>{t("about-us-page-card2-description")}</p>
         </motion.div>
         <motion.div variants={item} className="aboutUs_card">
-          <h1>{t("about-us-page-card1-title3")}</h1>
+          <h1>{t("about-us-page-card3-title")}</h1>
           <p>
             {t("about-us-page-card3-description")}
-            <mark>{t("")}</mark>
+            <mark>{t("about-us-page-card3-mark")}</mark>
           </p>
         </motion.div>
         <motion.div variants={item} className="aboutUs_card">
-          <h1>{t("about-us-page-card1-title4")}</h1>
+          <h1>{t("about-us-page-card4-title")}</h1>
           <p>{t("about-us-page-card4-description")}</p>
         </motion.div>
       </motion.div>
