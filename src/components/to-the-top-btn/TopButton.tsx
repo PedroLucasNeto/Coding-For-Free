@@ -7,10 +7,7 @@ const TopButton = () => {
   const [leftHome, setLeftHome] = useState(false);
 
   const handleAppear = () => {
-    console.log(leftHome);
-    console.log(scrollPosition);
     setScrollPosition(window.scrollY);
-
     if (scrollPosition > 300) {
       setLeftHome(true);
     } else {
@@ -21,9 +18,17 @@ const TopButton = () => {
   window.addEventListener("scroll", handleAppear);
   return (
     <div className={leftHome ? "top_button_div" : ""}>
-      <a href="#home" className="top_button">
+      <button
+        onClick={() =>
+          window.scrollTo({
+            top: 0,
+            behavior: "smooth",
+          })
+        }
+        className="top_button"
+      >
         <TbArrowBigTop />
-      </a>
+      </button>
     </div>
   );
 };
