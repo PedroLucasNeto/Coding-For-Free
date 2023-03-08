@@ -30,6 +30,7 @@ const Contributors = () => {
   };
   return (
     <motion.section
+      id="contributors"
       ref={sectionRef}
       variants={animationSection}
       initial="hidden"

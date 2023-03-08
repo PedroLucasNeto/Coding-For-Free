@@ -66,9 +66,9 @@ const Home = () => {
               <p>
                 {t("home-section-description3")}
                 <button>
-                  <Link to={"/about"}>
+                  <a href={"#contributors"}>
                     {t("home-section-button-click-here")}
-                  </Link>
+                  </a>
                 </button>
               </p>
             </motion.div>
