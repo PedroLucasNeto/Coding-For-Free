@@ -105,11 +105,7 @@ const Contact = () => {
             </a>
           </li>
           <li>
-            <a
-              href="https://harlon.netlify.app/"
-              target={"_blank"}
-              className="title"
-            >
+            <a href="/" className="title">
               <TbWorld />
               <h3>{t("contact-page-info2")}</h3>
             </a>

@@ -9,6 +9,7 @@ import Contributors from "../../components/contributors/Contributors";
 import Process from "../../components/process/Process";
 import SiteSection from "../../components/sites-section/SiteSection";
 import { useTranslation } from "react-i18next";
+import TopButton from "../../components/to-the-top-btn/TopButton";
 
 const container = {
   hidden: { opacity: 0, scale: 1 },
@@ -77,6 +78,7 @@ const Home = () => {
       <Process />
       <SiteSection />
       <Contributors />
+      <TopButton />
       <Social />
     </div>
   );
