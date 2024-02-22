@@ -37,10 +37,10 @@ const SiteSection = () => {
       animate={isInView ? "visible" : "invisible"}
       className="site_section"
     >
-      <h2>{t("sites-section-title")}</h2>
+      <h2>{t("sites-section-title")}</h2>;
       {sites.map((site, index) => {
-        const name = t("sites-section-name");
-        const description = t("sites-section-description");
+        const name = t("sites-section-name-" + site.name);
+        const description = t("sites-section-description-" + site.name);
         const object = { name: name, image: site.image, description };
 
         return <SitesDeveloped key={index} site={object} />;

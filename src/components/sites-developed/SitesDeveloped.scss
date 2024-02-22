@@ -1,5 +1,5 @@
-@use '../../styles/breakpoints.scss' as *;
-@use '../../styles/colors.scss' as color;
+@use "../../styles/breakpoints.scss" as *;
+@use "../../styles/colors.scss" as color;
 
 .site_container {
   display: flex;
@@ -15,19 +15,16 @@
 
   box-shadow: 0 5px 15px color.$black-900;
 
-  background-color: rgba(color.$black-900, 0.9);
-  background-blend-mode: color-dodge;
-  background-size: 200%;
-  background-position: 0% 50%;
+  background-size: cover !important;
   background-repeat: no-repeat;
 
-  min-width: 13rem;
-  max-width: 20rem;
+  // min-width: 13rem;
+  // max-width: 20rem;
   min-height: 20rem;
 
   align-items: flex-start;
 
-  .lists{
+  .lists {
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
@@ -54,6 +51,9 @@
 
   justify-content: center;
   text-align: left;
+  > * {
+    backdrop-filter: blur(10px);
+  }
 
   > h3 {
     color: color.$purple-400;

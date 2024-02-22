@@ -2,7 +2,7 @@ import "./Contact.scss";
 import { TbMail, TbBrandWhatsapp, TbMapPin, TbWorld } from "react-icons/tb";
 import { useRef } from "react";
 import emailjs from "@emailjs/browser";
-import { contactInfo } from "../../utils/email_key";
+import contactInfo from "../../utils/email_key";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { useTranslation } from "react-i18next";
