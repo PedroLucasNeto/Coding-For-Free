@@ -1,0 +1,33 @@
+@use "../../styles/breakpoints" as *;
+@use "../../styles/colors" as color;
+
+.translation_button {
+  display: none;
+  justify-content: center;
+  align-items: center;
+
+  padding: 0.25rem;
+
+  color: color.$purple-50;
+  background-color: color.$purple-800;
+  border-radius: 0.25rem;
+
+  transition-property: all;
+  transition-timing-function: ease-in-out;
+  transition-duration: 300ms;
+
+  &:hover {
+    color: color.$purple-300;
+    background-color: color.$purple-900;
+  }
+
+  @include sm {
+    display: flex;
+  }
+
+  > svg {
+    width: 1.25rem;
+    height: 1.25rem;
+  }
+}
+

@@ -1,16 +1,16 @@
 import "./Navbar.scss";
 import { NavLink } from "react-router-dom";
-import TranslationButton from "../shared/translation-button/TranslationButton";
-import { useState } from "react";
 import { useTranslation } from "react-i18next";
+import TranslationButton from "../translation-button/TranslationButton";
 
 interface NavbarProps {
   isOpened: boolean;
   handleClick: (isOpened: boolean) => void;
 }
+
 const Navbar = ({ isOpened, handleClick }: NavbarProps) => {
-  const [isTranslated, setIsTranslated] = useState(false);
   const { t } = useTranslation();
+
   return (
     <ul className={`navbar ${isOpened ? "opened" : ""}`}>
       <li>
@@ -30,10 +30,7 @@ const Navbar = ({ isOpened, handleClick }: NavbarProps) => {
         </NavLink>
       </li>
       <li>
-        <TranslationButton
-          isTranslated={isTranslated}
-          handleTranslation={setIsTranslated}
-        />
+        <TranslationButton/>
       </li>
     </ul>
   );
