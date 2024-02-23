@@ -2,7 +2,6 @@ import "./Contact.scss";
 import { TbMail, TbBrandWhatsapp, TbMapPin, TbWorld } from "react-icons/tb";
 import { useRef } from "react";
 import emailjs from "@emailjs/browser";
-import contactInfo from "../../utils/email_key";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { useTranslation } from "react-i18next";
@@ -29,10 +28,10 @@ const Contact = () => {
     if (!form.current) return;
     emailjs
       .sendForm(
-        contactInfo.serviceId,
-        contactInfo.templateId,
+        import.meta.env.SERVICE_ID,
+        import.meta.env.TEMPLATE_ID,
         form.current,
-        contactInfo.publicKey
+        import.meta.env.PUBLIC_KEY
       )
       .then(
         (result) => {

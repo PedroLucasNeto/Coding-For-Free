@@ -13,7 +13,7 @@ dist-ssr
 *.local
 
 #misc
-src/utils/email_key.ts
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
@@ -24,3 +24,4 @@ src/utils/email_key.ts
 *.njsproj
 *.sln
 *.sw?
+.env
