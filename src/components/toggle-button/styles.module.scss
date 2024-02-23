@@ -1,0 +1,42 @@
+@use "../../styles/breakpoints" as *;
+@use "../../styles/colors" as color;
+
+.toggle_button {
+  display: flex;
+  flex-direction: column;
+  gap: 0.375rem;
+  cursor: pointer;
+
+  :nth-child(1),
+  :nth-child(2),
+  :nth-child(3) {
+    width: 2rem;
+    height: 0.25rem;
+    background-color: color.$purple-50;
+    border-radius: 0.5rem;
+    transition: all 0.3s ease-in-out;
+  }
+
+  @include sm {
+    display: none;
+  }
+}
+
+.toggle_active {
+  :nth-child(1),
+  :nth-child(3) {
+    background-color: color.$yellow-300;
+  }
+
+  :nth-child(1) {
+    transform: translateY(10px) rotate(-45deg);
+  }
+
+  :nth-child(2) {
+    opacity: 0;
+  }
+
+  :nth-child(3) {
+    transform: translateY(-10px) rotate(45deg);
+  }
+}
