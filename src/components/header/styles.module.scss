@@ -15,7 +15,7 @@
   align-items: center;
 
   padding: 1.5rem 2rem;
-  background-color: rgba(color.$purple-900, 0.3);
+  background-color: color.$purple-900;
 
   > a {
     color: color.$purple-200;
@@ -54,14 +54,11 @@
       gap: 0.5rem;
 
       color: color.$purple-50;
-      transition-property: all;
-      transition-timing-function: ease-in-out;
-      transition-duration: 300ms;
+      transition: all 300ms ease-in-out;
 
-      &:hover {
+      &:hovr {
         color: color.$purple-300;
       }
     }
   }
 }
-
