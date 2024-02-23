@@ -1,4 +1,4 @@
-import "./AboutUs.scss";
+import "./aboutUs.scss";
 import Social from "../../components/social/Social";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
