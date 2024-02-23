@@ -22,7 +22,7 @@ const SiteSection = () => {
       transition: {
         type: "spring",
         bounce: 0.2,
-        duration: 1.5,
+        duration: 1.2,
       },
     },
   };
@@ -30,22 +30,34 @@ const SiteSection = () => {
   const { t } = useTranslation();
 
   return (
-    <motion.section
-      ref={siteRef}
-      variants={animationSite}
-      initial="hidden"
-      animate={isInView ? "visible" : "invisible"}
-      className="site_section"
-    >
+    <div className="site_section">
       <h2>{t("sites-section-title")}</h2>;
       {sites.map((site, index) => {
         const name = t("sites-section-name-" + site.name);
         const description = t("sites-section-description-" + site.name);
-        const object = { name: name, image: site.image, description };
+        const object = {
+          ...site,
+          name: name,
+          description,
+          // image: site.image,
+          // githubLink: site.githubLink,
+          // siteLink: site.siteLink,
+          // developedBy: site.developedBy,
+        };
 
-        return <SitesDeveloped key={index} site={object} />;
+        return (
+          <motion.section
+            ref={siteRef}
+            variants={animationSite}
+            initial="hidden"
+            animate={"visible"}
+            className=""
+          >
+            <SitesDeveloped key={index} site={object} />
+          </motion.section>
+        );
       })}
-    </motion.section>
+    </div>
   );
 };
 

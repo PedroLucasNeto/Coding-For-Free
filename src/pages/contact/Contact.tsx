@@ -2,7 +2,7 @@ import "./Contact.scss";
 import { TbMail, TbBrandWhatsapp, TbMapPin, TbWorld } from "react-icons/tb";
 import { useRef } from "react";
 import emailjs from "@emailjs/browser";
-import contactInfo from "../../utils/email_key";
+import { contactInfo } from "../../utils/email_key";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { useTranslation } from "react-i18next";
@@ -36,13 +36,11 @@ const Contact = () => {
       )
       .then(
         (result) => {
-          console.log(result.text);
           sent();
           setTimeout(() => {}, 3000);
         },
         (error) => {
           notSent();
-          console.log(error.text);
         }
       );
     e.target.reset();
