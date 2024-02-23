@@ -51,7 +51,7 @@ const SiteSection = () => {
             variants={animationSite}
             initial="hidden"
             animate={"visible"}
-            className=""
+            key={index}
           >
             <SitesDeveloped key={index} site={object} />
           </motion.section>
