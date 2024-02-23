@@ -1,8 +1,8 @@
 {
   "translation": {
-    "header-item1":"Início",
-    "header-item2":"Contato",
-    "header-item3":"Sobre Nós",
+    "header.navigation.home":"Início",
+    "header.navigation.contact":"Contato",
+    "header.navigation.about":"Sobre Nós",
     "header-mobile-item1":"Início",
     "header-mobile-item2":"Contato",
     "header-mobile-item3":"Sobre Nós",
@@ -36,9 +36,19 @@
     "process-section-card6-title":"Launch",
     "process-section-card6-description1":"Assim que tudo estiver funcionando perfeitamente, é hora de implantar nosso site.",
     "process-section-card6-description2":"Depois disso, nosso trabalho está completo e o cliente agora tem sua própria presença online!",
+
     "sites-section-title":"Sites que já criamos!",
     "sites-section-name-Forzam Detail":"Forzam Detail",
     "sites-section-description-Forzam Detail":"Este site foi desenvolvido para um estúdio de detalhamento automotivo. É uma landing page com tema escuro e bem objetivo. O intuito do site é fazer com que as pessoas conheçam um pouco melhor o trabalho deles.  ",
+
+    "sites-section-name-Natufit Especiarias":"Natufit Especiarias",
+    "sites-section-description-Natufit Especiarias":"Plataforma especializada em especiarias naturais e produtos relacionados, com foco em qualidade e saúde. Oferece uma variedade de especiarias e temperos, apresentando-os de forma atrativa e educativa para os consumidores, fornecendo informações detalhadas sobre os produtos.",
+
+    "sites-section-name-CGRH":"CGRH",
+    "sites-section-description-CGRH":"Oferece soluções abrangentes em gestão de recursos humanos, com foco na eficiência e desenvolvimento pessoal. Proporciona ferramentas e conteúdos relevantes para o gerenciamento de equipes, recrutamento e treinamento de talentos, sendo um recurso valioso para profissionais e empresas.",
+
+    "sites-section-developer-name":"Desenvolvido por",
+
     "contributors-section-title":"Fundadores do Projeto",
     "contributors-section-card1-founder":"Fundador",
     "contributors-section-card2-founder":"Co-Fundador",
