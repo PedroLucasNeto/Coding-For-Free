@@ -5,13 +5,14 @@ import en from "./translations/en.json";
 import ptBR from "./translations/pt_br.json";
 
 i18n
-  .use(LanguageDetector)
   .use(initReactI18next)
+  .use(LanguageDetector)
   .init({
     resources: {
       en,
       ptBR,
     },
+    supportedLngs: ['en', 'pt-BR'],
     fallbackLng: "en",
     debug: false,
     keySeparator: false,
