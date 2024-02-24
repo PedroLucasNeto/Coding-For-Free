@@ -61,7 +61,7 @@ const Home = () => {
             <strong>{t("page.home.more_information.title")}</strong>
             <p>
               {t("page.home.more_information.description")}
-              <a href="#contributors">{t('page.home.more_information.link')}</a>
+              <a href="#websites">{t('page.home.more_information.link')}</a>
             </p>
           </motion.li>
         </motion.ul>

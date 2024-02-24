@@ -28,7 +28,6 @@ const Collaborators = () => {
   };
   return (
     <motion.section
-      id="collaborators"
       ref={sectionRef}
       variants={animationSection}
       initial="hidden"
