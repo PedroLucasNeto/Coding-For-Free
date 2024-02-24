@@ -1,0 +1,85 @@
+@use "../../../../styles/breakpoints" as *;
+@use "../../../../styles/colors" as color;
+
+.process_section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  > h2 {
+    color: color.$purple-50;
+  }
+}
+
+.process_section::before {
+  content: "";
+  width: 50%;
+  border-top: solid color.$purple-900;
+  border-width: 0.2rem;
+
+  margin-bottom: 4rem;
+}
+
+.process_section::after {
+  content: "";
+  width: 50%;
+  border-bottom: solid color.$purple-900;
+  border-width: 0.2rem;
+
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.cards_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  padding: 2rem;
+
+  gap: 3rem;
+
+  > img {
+    width: 300px;
+    height: 300px;
+
+    transform: translatey(0px);
+    animation: float 6s ease-in-out infinite;
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translatey(0px);
+  }
+  50% {
+    transform: translatey(-15px);
+  }
+  100% {
+    transform: translatey(0px);
+  }
+}
+
+@include md {
+  .process_section::before {
+    margin-bottom: 6rem;
+  }
+
+  .cards_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    max-width: 900px;
+  }
+}
+
+.row_reverse {
+  @include md {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+}

@@ -1,0 +1,111 @@
+@use "../../styles/colors" as color;
+@use "../../styles/breakpoints" as *;
+
+.info_card {
+  display: flex;
+  flex-direction: column;
+
+  width: fit-content;
+  height: 20rem;
+
+  padding: 2rem;
+
+  border-radius: 0.5rem;
+
+  overflow: hidden;
+
+  background-color: rgba(color.$purple-100, 0.1);
+
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.6);
+
+  &:hover {
+    box-shadow: 0 5px 20px rgba(color.$purple-300, 1);
+    scale: 1.01;
+    transition: all 0.3s ease-in-out;
+  }
+}
+
+.profile_info {
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+
+  width: 100%;
+
+  margin: 0 auto;
+  margin-bottom: 2rem;
+
+  > img {
+    width: 3.75rem;
+    height: 3.75rem;
+
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  div {
+    display: flex;
+    flex-direction: column;
+
+    margin: auto 0;
+
+    h2 {
+      color: color.$purple-50;
+      font-weight: 700;
+      font-size: 1.25rem;
+
+      max-width: 9rem;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    h3 {
+      color: color.$purple-300;
+      font-weight: 200;
+      font-size: 1rem;
+    }
+  }
+}
+
+.info_list {
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+
+  margin: 0 auto;
+
+  > a > button {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    width: 100%;
+
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+
+    .icons {
+      width: 1.75rem;
+      height: 1.75rem;
+
+      color: color.$purple-400;
+    }
+
+    h3 {
+      color: color.$purple-50;
+      font-weight: 100;
+      font-size: 1rem;
+    }
+
+    &:hover {
+      background-color: rgba(color.$black-900, 0.3);
+
+      h3 {
+        color: color.$purple-200;
+      }
+    }
+  }
+}
