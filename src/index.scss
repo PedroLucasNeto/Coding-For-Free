@@ -1,17 +1,18 @@
 @use "./styles/colors" as color;
 
 @font-face {
-  font-family: 'Bungee';
-  src: url('./assets/fonts/Bungee-Regular.ttf') format('truetype');
+  font-family: "Bungee";
+  src: url("./assets/fonts/Bungee-Regular.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: 'OpenSans';
-  src: url('./assets/fonts/OpenSans-VariableFont_wdth\,wght.ttf') format('truetype');
+  font-family: "OpenSans";
+  src: url("./assets/fonts/OpenSans-VariableFont_wdth\,wght.ttf")
+    format("truetype");
 }
 
-$opensans: 'OpenSans', cursive;
-$bungee: 'Bungee', cursive;
+$opensans: "OpenSans", cursive;
+$bungee: "Bungee", cursive;
 
 /* Chrome, Edge, and Safari */
 *::-webkit-scrollbar {
@@ -83,3 +84,4 @@ button {
 
   cursor: pointer;
 }
+

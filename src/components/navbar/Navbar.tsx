@@ -30,10 +30,11 @@ const Navbar = ({ isOpened, handleClick }: NavbarProps) => {
         </NavLink>
       </li>
       <li>
-        <TranslationButton/>
+        <TranslationButton />
       </li>
     </ul>
   );
 };
 
 export default Navbar;
+

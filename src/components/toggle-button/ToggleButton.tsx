@@ -20,3 +20,4 @@ const ToggleButton = ({ isActive, onToggle }: ToggleButtonProps) => {
 };
 
 export default ToggleButton;
+

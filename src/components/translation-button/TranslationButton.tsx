@@ -18,7 +18,7 @@ const TranslationButton = () => {
 
     setCurrentLang(en_us);
     i18n.changeLanguage("en_us");
-  }
+  };
 
   return (
     <button className={styles.translation_button} onClick={toggleIdiom}>
@@ -28,3 +28,4 @@ const TranslationButton = () => {
 };
 
 export default TranslationButton;
+

@@ -1,13 +1,12 @@
-import "./Process.scss";
-
 import { processes } from "../../utils/processes";
 import ProcessCard from "../process-card/ProcessCard";
 import { useTranslation } from "react-i18next";
+import styles from "./styles.module.scss";
 
 const Process = () => {
   const { t } = useTranslation();
   return (
-    <section className="process_section">
+    <section className={styles.process_section}>
       <h2>{t("process-section-title")}</h2>
       {processes.map((process, index) => {
         const title = t(`process-section-card${index + 1}-title`);
@@ -23,9 +22,9 @@ const Process = () => {
           <div
             key={index}
             id="cards_container"
-            className={
-              index % 2 == 0 ? "cards_container" : "cards_container row_reverse"
-            }
+            className={`${styles.cards_container} ${
+              index % 2 === 0 && styles.row_reverse
+            }`}
           >
             <img src={process.image} alt="Ilustrative image of each action" />
             <ProcessCard key={index} process={object} />
