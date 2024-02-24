@@ -1,13 +1,13 @@
 @use "../../styles/colors" as color;
 @use "../../styles/breakpoints" as *;
 
-.contributors {
+.collaborators {
   text-align: center;
   flex-direction: column;
 
   width: 100%;
 
-  padding: 2rem;
+  padding: 4rem 3rem;
   margin: 0 auto;
 
   > h2 {
@@ -15,19 +15,18 @@
     color: color.$purple-400;
     margin-bottom: 2rem;
   }
-
-  @include sm {
-    width: 100%;
-
-    .swiper-wrapper {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-  }
 }
 
-.swiper-pagination > .swiper-pagination-bullet{
+.cards_wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+
+  gap: 1rem;
+}
+
+.swiper-pagination > .swiper-pagination-bullet {
   background-color: color.$purple-500;
 }
 
@@ -38,9 +37,7 @@
 }
 
 .swiper {
-
   max-width: 48rem;
-
 }
 .swiper-slide {
   text-align: center;
@@ -50,4 +47,8 @@
   max-width: fit-content;
 }
 
-
+@include sm {
+  .collaborators {
+    padding: 6rem 3rem;
+  }
+}

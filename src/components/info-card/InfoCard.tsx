@@ -1,4 +1,4 @@
-import "./InfoCard.scss";
+import styles from "./styles.module.scss";
 
 import { SiGithub } from "react-icons/si";
 import { MdEmail } from "react-icons/md";
@@ -19,35 +19,35 @@ const InfoCard = ({ contributor }: InfoCardProps) => {
 
   const { t } = useTranslation();
   return (
-    <div className="info_card">
-      <div className="profile_info">
+    <div className={styles.info_card}>
+      <div className={styles.profile_info}>
         <img src={picture} alt={`${name}'s picture`} />
         <div>
           <h2>{name}</h2>
           {role ? <h3>{role}</h3> : null}
         </div>
       </div>
-      <div className="info_list">
+      <div className={styles.info_list}>
         {contactLinks.linkedin ? (
           <a href={contactLinks.linkedin} target="_blank">
             <button>
-              <RiLinkedinFill className="icons" />
-              <h3>{t("contributors-section-card-inProfile")}</h3>
+              <RiLinkedinFill className={styles.icons} />
+              <h3>{t("collaborators-section-card-inProfile")}</h3>
             </button>
           </a>
         ) : null}
         {contactLinks.github ? (
           <a href={contactLinks.github} target="_blank">
             <button>
-              <SiGithub className="icons" />
-              <h3>{t("contributors-section-card-hubProfile")}</h3>
+              <SiGithub className={styles.icons} />
+              <h3>{t("collaborators-section-card-hubProfile")}</h3>
             </button>
           </a>
         ) : null}
         {contactLinks.email ? (
           <a href={contactLinks.email} target="_blank">
             <button>
-              <MdEmail className="icons" />
+              <MdEmail className={styles.icons} />
               <h3>Email</h3>
             </button>
           </a>

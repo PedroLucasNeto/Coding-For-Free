@@ -1,4 +1,4 @@
-export const contributors = [
+export const collaborators = [
   {
     name: "Pedro Lucas",
     role: "Founder",
@@ -17,6 +17,16 @@ export const contributors = [
       linkedin: "https://www.linkedin.com/in/harlongarcia/",
       github: "https://github.com/HarlonGarcia",
       email: "mailto:harloongarcia@gmail.com",
+    },
+  },
+  {
+    name: "Breno Duarte",
+    role: "Collaborator",
+    picture: "/assets/images/contributors_pictures/brenadas.jpeg",
+    contactLinks: {
+      linkedin: "https://www.linkedin.com/in/breno-freitas-duarte/",
+      github: "https://github.com/brenooduarte",
+      email: "mailto:brenoduarte655@hotmail.com",
     },
   },
 ];

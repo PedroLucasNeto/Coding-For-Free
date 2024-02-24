@@ -49,11 +49,12 @@
 
     "sites-section-developer-name":"Desenvolvido por",
 
-    "contributors-section-title":"Fundadores do Projeto",
-    "contributors-section-card1-founder":"Fundador",
-    "contributors-section-card2-founder":"Co-Fundador",
-    "contributors-section-card-inProfile":"Perfil do LinkedIn",
-    "contributors-section-card-hubProfile":"Perfil do Github",
+    "collaborators-section-title":"Colaboradores",
+    "collaborators-section-card1-founder":"Fundador",
+    "collaborators-section-card2-founder":"Co-Fundador",
+    "collaborators-section-card3-founder":"Colaborador",
+    "collaborators-section-card-inProfile":"Perfil do LinkedIn",
+    "collaborators-section-card-hubProfile":"Perfil do Github",
     "social-media-section-text":"Nos siga nas",
     "social-media-section-mark":"redes sociais",
 

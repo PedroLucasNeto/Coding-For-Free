@@ -1,17 +1,15 @@
-import "./Contributors.scss";
+import styles from "./styles.module.scss";
 import { useTranslation } from "react-i18next";
 import InfoCard from "../info-card/InfoCard";
-import { contributors } from "../../utils/contributors";
+import { collaborators } from "../../utils/collaborators";
 import { useRef } from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, EffectFade, Pagination } from "swiper";
 import { motion, useInView } from "framer-motion";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/effect-fade";
 import "swiper/css/pagination";
 
-const Contributors = () => {
+const Collaborators = () => {
   const sectionRef = useRef(null);
   const isInView = useInView(sectionRef);
   const { t } = useTranslation();
@@ -30,44 +28,32 @@ const Contributors = () => {
   };
   return (
     <motion.section
-      id="contributors"
+      id="collaborators"
       ref={sectionRef}
       variants={animationSection}
       initial="hidden"
       animate={isInView ? "visible" : "invisible"}
-      className="contributors"
+      className={styles.collaborators}
     >
-      <h2>{t("contributors-section-title")} </h2>
-      <Swiper
-        modules={[Navigation, EffectFade, Pagination]}
-        effect="slide"
-        speed={800}
-        slidesPerView={"auto"}
-        spaceBetween={40}
-        pagination={{ clickable: true }}
-        scrollbar={{ draggable: true }}
-        className="swiper_container"
-      >
-        {contributors.map((contributor, index) => {
-          const contributorTitle = t(
-            `contributors-section-card${index + 1}-founder`
+      <h2>{t("collaborators-section-title")} </h2>
+
+      <div className={styles.cards_wrapper}>
+        {collaborators.map((collaborator, index) => {
+          const collaboratorTitle = t(
+            `collaborators-section-card${index + 1}-founder`
           );
           const object = {
-            name: contributor.name,
-            role: contributorTitle,
-            picture: contributor.picture,
-            contactLinks: contributor.contactLinks,
+            name: collaborator.name,
+            role: collaboratorTitle,
+            picture: collaborator.picture,
+            contactLinks: collaborator.contactLinks,
           };
 
-          return (
-            <SwiperSlide key={index + contributor.name}>
-              <InfoCard contributor={object} />
-            </SwiperSlide>
-          );
+          return <InfoCard contributor={object} />;
         })}
-      </Swiper>
+      </div>
     </motion.section>
   );
 };
 
-export default Contributors;
+export default Collaborators;

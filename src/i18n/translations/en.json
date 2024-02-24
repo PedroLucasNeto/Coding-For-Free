@@ -36,7 +36,7 @@
     "process-section-card6-description1":"Once everything's working beautifully, it's time to deploy our website.",
     "process-section-card6-description2":"After that, our handiwork is complete, and the client now has their own online presence!",
 
-    "sites-section-title":"Sites we've done!",
+    "sites-section-title":"Sites we've created!",
     "sites-section-name-Forzam Detail":"Forzam Detail",
     "sites-section-description-Forzam Detail":"This website was developed for a vehicle detailing studio. It's a dark theme, and very objective landpage so people can see know a bit more their work and contact them.",
 
@@ -48,11 +48,12 @@
 
     "sites-section-developer-name":"Developed by",
 
-    "contributors-section-title":"Founders",
-    "contributors-section-card1-founder":"Founder",
-    "contributors-section-card2-founder":"Co-Founder",
-    "contributors-section-card-inProfile":"LinkedIn Profile",
-    "contributors-section-card-hubProfile":"Github Profile",
+    "collaborators-section-title":"Collaborators",
+    "collaborators-section-card1-founder":"Founder",
+    "collaborators-section-card2-founder":"Co-Founder",
+    "collaborators-section-card3-founder":"Collaborator",
+    "collaborators-section-card-inProfile":"LinkedIn Profile",
+    "collaborators-section-card-hubProfile":"Github Profile",
     "social-media-section-text":"Follow us on",
     "social-media-section-mark":"social media",
 
