@@ -2,10 +2,10 @@ import "react-toastify/dist/ReactToastify.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { ToastContainer } from "react-toastify";
 
-import Header from "./components/header/Header";
-import Home from "./pages/home/Home";
-import AboutUs from "./pages/about-us/AboutUs";
-import Contact from "./pages/contact/Contact";
+import Header from "./components/Header/Header";
+import Home from "./pages/Home/Home";
+import AboutUs from "./pages/AboutUs/AboutUs";
+import Contact from "./pages/Contact/Contact";
 
 function App() {
   return (

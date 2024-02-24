@@ -1,0 +1,104 @@
+@use "../../../../../../styles/breakpoints.scss" as *;
+@use "../../../../../../styles/colors.scss" as color;
+
+.site_container {
+  display: flex;
+  flex-direction: column;
+  // justify-content: space-between;
+  align-items: center;
+
+  gap: 1rem;
+
+  padding: 2rem;
+
+  border-radius: 0.3rem;
+
+  box-shadow: 0 5px 15px color.$black-900;
+
+  background-blend-mode: darken;
+  background-color: rgba(color.$black-500, 0.7);
+  background-size: cover !important;
+  background-repeat: no-repeat;
+
+  min-height: 18rem;
+
+  align-items: flex-start;
+
+  .developed-by {
+    color: color.$purple-100;
+    font-size: 0.8rem;
+    > a {
+      color: color.$purple-200;
+      font-size: 0.8rem;
+      &:hover {
+        color: color.$purple-400;
+      }
+    }
+  }
+
+  .backdrop {
+    background-color: rgba(color.$black-700, 0.7);
+    backdrop-filter: blur(0.3rem);
+
+    padding: 0.5rem;
+    border-radius: 0.3rem;
+  }
+
+  .lists {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+
+    > li {
+      color: color.$purple-400;
+    }
+
+    > li > a {
+      font-size: 1.5rem;
+      color: color.$purple-100;
+
+      &:hover {
+        color: color.$purple-400;
+      }
+    }
+  }
+}
+
+.site_info {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+
+  justify-content: center;
+  text-align: left;
+
+  padding: 1rem;
+
+  > h3 {
+    color: color.$purple-400;
+  }
+
+  > p {
+    line-height: 1.3rem;
+    color: color.$purple-100;
+  }
+}
+
+@include sm {
+  .site_container {
+    max-width: 24rem;
+  }
+}
+
+@include md {
+  .site_container {
+    max-width: 47rem;
+  }
+}
+
+// @include lg {
+//   .site_container {
+//     background-size: contain;
+//     background-position: 50% 100%;
+//   }
+// }
