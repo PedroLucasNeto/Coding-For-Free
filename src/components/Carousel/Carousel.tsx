@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { ReactNode, useState } from "react";
 import { TbChevronLeft, TbChevronRight } from "react-icons/tb";
 import styles from "./styles.module.scss";
 
@@ -18,7 +18,7 @@ export const Carousel = ({ children }: { children: React.ReactNode }) => {
           <TbChevronLeft />
         </button>
       )}
-      {React.Children.map(children, (child: any, i: number) => (
+      {React.Children.map(children, (element: ReactNode, i: number) => (
         <div
           className={styles.card_container}
           style={
@@ -33,7 +33,7 @@ export const Carousel = ({ children }: { children: React.ReactNode }) => {
             } as React.CSSProperties
           }
         >
-          {child}
+          {element}
         </div>
       ))}
       {active < count - 1 && (
