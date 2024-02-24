@@ -1,0 +1,14 @@
+@use "../../styles/breakpoints" as *;
+
+.container {
+  max-width: 90rem;
+  margin: 0 auto;
+  margin-top: 4.8125rem;
+  padding: 3rem;
+}
+
+@include sm {
+  .container {
+    margin-top: 0rem
+  }
+}
