@@ -1,7 +1,7 @@
 import styles from "./styles.module.scss";
 
 import emailjs from "@emailjs/browser";
-import { useRef } from "react";
+import { FormEvent, useRef } from "react";
 import { useTranslation } from "react-i18next";
 import { MdEmail } from "react-icons/md";
 import { TbMail, TbBrandWhatsapp, TbMapPin, TbWorld } from "react-icons/tb";
@@ -17,15 +17,15 @@ const MoreInformationCard = () => {
     <div className={styles.more_information}>
       <h2>{t("page.contact.information.title")}</h2>
       <nav>
-        <a href="https://goo.gl/maps/kU7wxdBnobnL6SC26" target={"_blank"}>
+        <a href="https://goo.gl/maps/kU7wxdBnobnL6SC26" target={"_blank"} rel="noreferrer">
           <TbMapPin />
           <span>{t("page.contact.information.address")}</span>
         </a>
-        <a href="https://wa.me/5583998107584" target={"_blank"}>
+        <a href="https://wa.me/5583998107584" target={"_blank"} rel="noreferrer">
           <TbBrandWhatsapp />
           <span>{t("page.contact.information.messager")}</span>
         </a>
-        <a href="mailto:contactcodingforfree@gmail.com" target={"_blank"}>
+        <a href="mailto:contactcodingforfree@gmail.com" target={"_blank"} rel="noreferrer">
           <TbMail />
           <span>{t("page.contact.information.email")}</span>
         </a>
@@ -35,19 +35,19 @@ const MoreInformationCard = () => {
         </a>
       </nav>
     </div>
-  )
-}
+  );
+};
 
 const Contact = () => {
   const { t } = useTranslation();
   const form = useRef<HTMLFormElement | null>(null);
 
-  const sendEmail = async (e: any) => {
+  const sendEmail = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
     if (!form.current) {
       return;
-    };
+    }
 
     const response = await emailjs.sendForm(
       import.meta.env.VITE_SERVICE_ID,
@@ -57,12 +57,14 @@ const Contact = () => {
     );
 
     if (!response) {
-      notify(t('page.contact.form.submit.error'));
+      notify(t("page.contact.form.submit.error"));
       return;
     }
 
-    notify(t('page.contact.form.submit.success'))
-    e.target.reset();
+    notify(t("page.contact.form.submit.success"));
+
+    const formElement = e.target as HTMLFormElement;
+    formElement.reset();
   };
 
   return (
