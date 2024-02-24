@@ -35,13 +35,11 @@ const Contact = () => {
       )
       .then(
         (result) => {
-          console.log(result.text);
           sent();
           setTimeout(() => {}, 3000);
         },
         (error) => {
           notSent();
-          console.log(error.text);
         }
       );
     e.target.reset();

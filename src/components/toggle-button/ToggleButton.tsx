@@ -1,4 +1,4 @@
-import "./ToggleButton.scss";
+import styles from "./styles.module.scss";
 
 interface ToggleButtonProps {
   isActive: boolean;
@@ -8,8 +8,8 @@ interface ToggleButtonProps {
 const ToggleButton = ({ isActive, onToggle }: ToggleButtonProps) => {
   return (
     <span
-      id="toggleButton"
-      className={isActive ? "toggle_button toggle_active" : "toggle_button"}
+      id="toggle-button"
+      className={`${styles.toggle_button} ${isActive && styles.toggle_active}`}
       onClick={() => onToggle(!isActive)}
     >
       <span></span>

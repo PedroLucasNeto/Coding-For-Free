@@ -1,42 +1,43 @@
+import "/node_modules/flag-icons/css/flag-icons.min.css";
+import styles from "./styles.module.scss";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { NavLink } from "react-router-dom";
+import { HiHome } from "react-icons/hi";
+import { HiHashtag } from "react-icons/hi2";
+import { BsFillPeopleFill } from "react-icons/bs";
+
 import Navbar from "../navbar/Navbar";
-import ToggleButton from "../shared/toggle-button/ToggleButton";
-import TranslationButton from "../shared/translation-button/TranslationButton";
-import "./Header.scss";
-import "/node_modules/flag-icons/css/flag-icons.min.css";
+import ToggleButton from "../toggle-button/ToggleButton";
+import TranslationButton from "../translation-button/TranslationButton";
 
 const Header = () => {
-  const [isActive, setIsActive] = useState(false);
-  const [isTranslated, setIsTranslated] = useState(false);
   const { t } = useTranslation();
+  const [isActive, setIsActive] = useState(false);
 
   return (
     <>
-      <div className="header_container">
+      <div className={styles.header_container}>
         <NavLink to="/" end>
-          <img src="/assets/images/CFF-ICON-WHITE.png" alt="" />
+          CFF
         </NavLink>
-        <ul className="header_nav">
-          <li>
+        <div className={styles.nav_items}>
+          <nav>
             <NavLink to="/" end>
-              {t("header-item1")}
+              <HiHome />
+              <span>{t("header.navigation.home")}</span>
             </NavLink>
-          </li>
-          <li>
-            <NavLink to="/contact">{t("header-item2")}</NavLink>
-          </li>
-          <li>
-            <NavLink to="/about">{t("header-item3")}</NavLink>
-          </li>
-          <li>
-            <TranslationButton
-              isTranslated={isTranslated}
-              handleTranslation={setIsTranslated}
-            />
-          </li>
-        </ul>
+            <NavLink to="/contact">
+              <HiHashtag />
+              <span>{t("header.navigation.contact")}</span>
+            </NavLink>
+            <NavLink to="/about">
+              <BsFillPeopleFill />
+              <span>{t("header.navigation.about")}</span>
+            </NavLink>
+          </nav>
+          <TranslationButton />
+        </div>
         <ToggleButton isActive={isActive} onToggle={setIsActive} />
       </div>
       <Navbar isOpened={isActive} handleClick={setIsActive} />

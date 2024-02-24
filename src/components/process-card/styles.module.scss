@@ -1,0 +1,62 @@
+@use "../../styles/breakpoints" as *;
+@use "../../styles/colors" as color;
+
+.process_card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+
+  // background-color: rgba(color.$purple-900, 0.1);
+  // box-shadow: 0 5px 15px rgba(color.$black-900, 0.4);
+
+  width: 100%;
+  height: 20rem;
+
+  padding: 2rem;
+
+  border-radius: 0.3rem;
+
+  > h2 {
+    color: color.$purple-400;
+
+    line-height: 0.3rem;
+
+    margin-bottom: 1.5rem;
+
+    text-align: left;
+  }
+
+  > ul {
+    margin-right: 1rem;
+
+    > li {
+      font-size: 1rem;
+      font-weight: 600;
+
+      line-height: 1.375rem;
+
+      color: color.$purple-50;
+
+      margin-bottom: 1rem;
+
+      > svg {
+        font-size: 0.5rem;
+        margin-right: 0.1rem;
+      }
+    }
+  }
+
+  @include sm {
+    padding: 2rem;
+    width: 350px;
+    height: 250px;
+  }
+}
+
+.grow {
+  transition: all 0.2s ease-in-out;
+}
+.grow:hover {
+  transform: scale(1.1);
+}

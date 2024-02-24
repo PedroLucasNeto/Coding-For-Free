@@ -1,8 +1,8 @@
 {
   "translation": {
-    "header-item1":"Home",
-    "header-item2":"Contact",
-    "header-item3":"About Us",
+    "header.navigation.home":"Home",
+    "header.navigation.contact":"Contact",
+    "header.navigation.about":"About Us",
     "header-mobile-item1":"Home",
     "header-mobile-item2":"Contact",
     "header-mobile-item3":"About Us",
@@ -41,7 +41,13 @@
     "sites-section-description-Forzam Detail":"This website was developed for a vehicle detailing studio. It's a dark theme, and very objective landpage so people can see know a bit more their work and contact them.",
 
     "sites-section-name-Natufit Especiarias":"Natufit Especiarias",
-    "sites-section-description-Natufit Especiarias":" platform specializing in natural spices and related products, focusing on quality and health. It offers a variety of spices and seasonings, showcasing them in an appealing and educational manner for consumers, providing detailed information about the products.",
+    "sites-section-description-Natufit Especiarias":"Platform specializing in natural spices and related products, focusing on quality and health. It offers a variety of spices and seasonings, showcasing them in an appealing and educational manner for consumers, providing detailed information about the products.",
+
+    "sites-section-name-CGRH":"CGRH",
+    "sites-section-description-CGRH":"CGRH provides comprehensive solutions in human resources management, focusing on efficiency and personal development. It offers tools and relevant content for team management, recruitment, and talent training, serving as a valuable resource for professionals and businesses.",
+
+    "sites-section-developer-name":"Developed by",
+
     "contributors-section-title":"Founders",
     "contributors-section-card1-founder":"Founder",
     "contributors-section-card2-founder":"Co-Founder",

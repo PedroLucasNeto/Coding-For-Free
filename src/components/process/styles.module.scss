@@ -10,21 +10,19 @@
   > h2 {
     color: color.$purple-50;
   }
-
 }
 
 .process_section::before {
-  content: '';
+  content: "";
   width: 50%;
   border-top: solid color.$purple-900;
   border-width: 0.2rem;
 
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
 }
 
-
 .process_section::after {
-  content: '';
+  content: "";
   width: 50%;
   border-bottom: solid color.$purple-900;
   border-width: 0.2rem;
@@ -32,8 +30,6 @@
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
-
-
 
 .cards_container {
   display: flex;
@@ -52,9 +48,26 @@
     transform: translatey(0px);
     animation: float 6s ease-in-out infinite;
   }
+}
 
+@keyframes float {
+  0% {
+    transform: translatey(0px);
+  }
+  50% {
+    transform: translatey(-15px);
+  }
+  100% {
+    transform: translatey(0px);
+  }
+}
 
-  @include md {
+@include md {
+  .process_section::before {
+    margin-bottom: 6rem;
+  }
+
+  .cards_container {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -65,24 +78,8 @@
 }
 
 .row_reverse {
-
   @include md {
     display: flex;
     flex-direction: row-reverse;
   }
 }
-
-
-
-@keyframes float {
-	0% {
-		transform: translatey(0px);
-	}
-	50% {
-		transform: translatey(-15px);
-	}
-	100% {
-		transform: translatey(0px);
-	}
-}
-
