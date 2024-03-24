@@ -56,6 +56,14 @@ export const sites = [
     siteLink: "https://cgrh.com.br/",
     developedBy: "Pedro Lucas",
   },
+  {
+    name: "Dr. Thiago Freitas",
+    description:"",
+    image: "/assets/images/dr_thiago_freitas/dr_thiago_freitas_banner.jpeg",
+    githubLink: "https://github.com/brenooduarte/consultorio-dr-thiago-freitas",
+    siteLink: "https://thiagofreitasodonto.netlify.app/",
+    developedBy: "Breno Duarte",
+  },
 ];
 
 export const processes = [
