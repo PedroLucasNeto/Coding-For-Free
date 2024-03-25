@@ -57,7 +57,7 @@ export const sites = [
     developedBy: "Pedro Lucas",
   },
   {
-    name: "Dr. Thiago Freitas",
+    name: "Dr Thiago Freitas",
     description:"",
     image: "/assets/images/dr_thiago_freitas/dr_thiago_freitas_banner.jpeg",
     githubLink: "https://github.com/brenooduarte/consultorio-dr-thiago-freitas",
