@@ -44,8 +44,8 @@ export const sites = [
     name: "Natufit Especiarias",
     description:"",
     image: "/assets/images/natufit_especiarias/natufit_banner.png",
-    githubLink: "https://natufit.netlify.app/",
-    siteLink: "https://natufitespeciarias.com/",
+    githubLink: "https://github.com/PedroLucasNeto/Natufit",
+    siteLink: "https://natufit.netlify.app/",
     developedBy: "Pedro Lucas",
   },
   {
