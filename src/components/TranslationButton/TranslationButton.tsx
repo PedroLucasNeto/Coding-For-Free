@@ -28,4 +28,3 @@ const TranslationButton = () => {
 };
 
 export default TranslationButton;
-

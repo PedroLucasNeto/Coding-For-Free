@@ -12,7 +12,7 @@ i18n
       en,
       ptBR,
     },
-    supportedLngs: ['en', 'pt-BR'],
+    supportedLngs: ['en', 'ptBR'],
     fallbackLng: "en",
     debug: false,
     keySeparator: false,
