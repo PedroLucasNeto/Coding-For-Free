@@ -22,4 +22,5 @@ export interface ISite {
   githubLink: string;
   siteLink: string;
   developedBy: string;
+  stack: string[];
 }

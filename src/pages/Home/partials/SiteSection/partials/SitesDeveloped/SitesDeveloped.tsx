@@ -12,7 +12,8 @@ const SitesDeveloped = ({ site }: SitesDevelopedProps) => {
     return null;
   }
 
-  const { name, description, image, githubLink, siteLink, developedBy } = site;
+  const { name, description, image, githubLink, siteLink, developedBy, stack } =
+    site;
   const { t } = useTranslation();
 
   return (
@@ -27,11 +28,9 @@ const SitesDeveloped = ({ site }: SitesDevelopedProps) => {
         <p>{description}</p>
       </div>
       <ul className="lists backdrop">
-        <li>React Js</li>
-        <li>Scss</li>
-        <li>Framer Motion</li>
-        <li>Swiper</li>
-        <li>EmailJs</li>
+        {stack.map((stackItem, index) => (
+          <li key={index}>{stackItem}</li>
+        ))}
       </ul>
       <ul className="lists backdrop">
         <li>

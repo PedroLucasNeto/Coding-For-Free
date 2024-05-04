@@ -37,40 +37,25 @@ const SiteSection = () => {
       variants={animationSite}
       initial="hidden"
       animate={"visible"}
+      className="section_container"
     >
       <div className={styles.site_section}>
         <h2>{t("sites-section-title")}</h2>;
         <Swiper
-       speed={1200}
-       pagination={true}
-       
-       breakpoints={{
-         1560: {
-           slidesPerView: 5,
-           pagination: false,
-         },
-         1024: {
-           slidesPerView: 3,
-           spaceBetween: 20,
-        
-         },
-         768: {
-           slidesPerView: 3,
-         },
-         0: {
-           slidesPerView: 1,
-           spaceBetween: 10,
-         },
-       }}
-       centerInsufficientSlides={true}
-       centeredSlides={true}
-       centeredSlidesBounds={true}
-       autoplay={{
-         delay: 4000,
-         disableOnInteraction: false,
-       }}
-       modules={[Autoplay, Pagination]}
-     >
+          style={{ maxWidth: "100%" }}
+          speed={1200}
+          pagination={{ clickable: true }}
+          slidesPerView={1}
+          loop={true}
+          centerInsufficientSlides={true}
+          centeredSlides={true}
+          centeredSlidesBounds={true}
+          autoplay={{
+            delay: 4000,
+            disableOnInteraction: false,
+          }}
+          modules={[Autoplay, Pagination]}
+        >
           {sites.map((site, index) => {
             const siteData = {
               ...site,
@@ -78,9 +63,14 @@ const SiteSection = () => {
               description: t("sites-section-description-" + site.name),
             };
 
-            return <SwiperSlide key={index} > 
-              <SitesDeveloped key={index} site={siteData} />;
-            </SwiperSlide>
+            return (
+              <SwiperSlide
+                style={{ display: "flex", justifyContent: "center" }}
+                key={index}
+              >
+                <SitesDeveloped key={index} site={siteData} />;
+              </SwiperSlide>
+            );
           })}
         </Swiper>
       </div>

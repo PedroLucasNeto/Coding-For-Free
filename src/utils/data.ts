@@ -31,23 +31,9 @@ export const collaborators = [
   },
 ];
 
+//ATTENTION: The order must be the same as the order of the collaborators and repeat as they have more websites;
+// If there's more than one website for a collaborator put them in the end of the list
 export const sites = [
-  {
-    name: "Forzam Detail",
-    description:"",
-    image: "/assets/images/forzam_detail/forzam_banner.png",
-    githubLink: "https://github.com/PedroLucasNeto/Forzam-Detail",
-    siteLink: "https://forzamdetail.netlify.app/",
-    developedBy: "Pedro Lucas",
-  },
-  {
-    name: "Natufit Especiarias",
-    description:"",
-    image: "/assets/images/natufit_especiarias/natufit_banner.png",
-    githubLink: "https://github.com/PedroLucasNeto/Natufit",
-    siteLink: "https://natufit.netlify.app/",
-    developedBy: "Pedro Lucas",
-  },
   {
     name: "CGRH",
     description:"",
@@ -55,6 +41,7 @@ export const sites = [
     githubLink: "https://github.com/PedroLucasNeto/cgrh",
     siteLink: "https://cgrh.com.br/",
     developedBy: "Pedro Lucas",
+    stack: ["React Js", "Tailwindcss", "TailwindComponentes"],
   },
   {
     name: "Dr Thiago Freitas",
@@ -63,6 +50,26 @@ export const sites = [
     githubLink: "https://github.com/brenooduarte/consultorio-dr-thiago-freitas",
     siteLink: "https://thiagofreitasodonto.netlify.app/",
     developedBy: "Breno Duarte",
+    stack: ["React Js", "JavaScript", "HTML", "Scss"],
+  },
+  {
+    name: "Forzam Detail",
+    description:"",
+    image: "/assets/images/forzam_detail/forzam_banner.png",
+    githubLink: "https://github.com/PedroLucasNeto/Forzam-Detail",
+    siteLink: "https://forzamdetail.netlify.app/",
+    developedBy: "Pedro Lucas",
+    stack: ["React Js", "Typescript", "Scss", "Swiper", "Framer Motion"],
+  },
+
+  {
+    name: "Natufit Especiarias",
+    description:"",
+    image: "/assets/images/natufit_especiarias/natufit_banner.png",
+    githubLink: "https://github.com/PedroLucasNeto/Natufit",
+    siteLink: "https://natufit.netlify.app/",
+    developedBy: "Pedro Lucas",
+    stack: ["React Js", "Typescript", "Scss", "Swiper", "Framer Motion"],
   },
 ];
 
