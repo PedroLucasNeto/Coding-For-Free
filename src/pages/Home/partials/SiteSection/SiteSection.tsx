@@ -1,5 +1,5 @@
 import { sites } from "../../../../utils/data";
-import { useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import { motion, useInView } from "framer-motion";
 import "swiper/css";
 import "swiper/css/navigation";

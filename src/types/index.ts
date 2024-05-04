@@ -19,6 +19,7 @@ export interface ISite {
   name: string;
   description: string;
   image: string;
+  imageMobile: string;
   githubLink: string;
   siteLink: string;
   developedBy: string;

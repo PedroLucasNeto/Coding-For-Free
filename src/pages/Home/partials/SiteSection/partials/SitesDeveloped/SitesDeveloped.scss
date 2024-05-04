@@ -17,10 +17,11 @@
 
   background-blend-mode: darken;
   background-color: rgba(color.$black-500, 0.7);
-  background-size: cover !important;
+  background-size: auto !important;
+  background-position: top !important;
   background-repeat: no-repeat;
 
-  min-height: 18rem;
+  height: 37rem;
 
   align-items: flex-start;
 

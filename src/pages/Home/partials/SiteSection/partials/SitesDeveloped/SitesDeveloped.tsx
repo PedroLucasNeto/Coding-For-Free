@@ -2,6 +2,7 @@ import "./SitesDeveloped.scss";
 import { ISite } from "../../../../../../types";
 import { TbBrandGithub, TbExternalLink, TbUser } from "react-icons/tb";
 import { useTranslation } from "react-i18next";
+import { useEffect, useState } from "react";
 
 interface SitesDevelopedProps {
   site: ISite;
@@ -12,15 +13,36 @@ const SitesDeveloped = ({ site }: SitesDevelopedProps) => {
     return null;
   }
 
-  const { name, description, image, githubLink, siteLink, developedBy, stack } =
-    site;
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 500);
+
+  const handleResize = () => {
+    setIsMobile(window.innerWidth < 500);
+  };
+
+  useEffect(() => {
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
+  const {
+    name,
+    description,
+    image,
+    imageMobile,
+    githubLink,
+    siteLink,
+    developedBy,
+    stack,
+  } = site;
   const { t } = useTranslation();
 
   return (
     <div
       className="site_container"
       style={{
-        backgroundImage: `url(${image})`,
+        backgroundImage: `url(${isMobile ? imageMobile : image})`,
       }}
     >
       <div className="site_info backdrop">
